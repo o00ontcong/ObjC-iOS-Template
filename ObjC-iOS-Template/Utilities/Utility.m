@@ -22,8 +22,6 @@
     newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    
-    
     return newImage;
 }
 

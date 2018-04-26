@@ -18,6 +18,7 @@
     [super viewDidLoad];
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"fs_voucher_left_arrow"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] style:UIBarButtonItemStylePlain target:self action:@selector(backAction:)];
     self.navigationItem.leftBarButtonItem = backButton;
+    self.view.backgroundColor = [UIColor grayColor];
 }
 
 @end

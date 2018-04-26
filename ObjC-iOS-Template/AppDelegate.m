@@ -20,7 +20,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self checkUserAuthentication];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

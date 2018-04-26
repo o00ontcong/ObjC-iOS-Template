@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
+    self.view.backgroundColor = [UIColor blueColor];
     [self configureView];
 }
 -(void)viewDidAppear:(BOOL)animated{
@@ -129,8 +130,14 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
 }
 
-#pragma mark - Protocol conformance
-
+#pragma mark - UITabBarControllerdelegate
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    
+    BaseNavigationController *navController = (BaseNavigationController *)[self selectedViewController];
+    [navController popToRootViewControllerAnimated:NO];
+    [viewController viewDidAppear:YES];
+    
+}
 #pragma mark -  Call API
 
 #pragma mark -  Web Service
