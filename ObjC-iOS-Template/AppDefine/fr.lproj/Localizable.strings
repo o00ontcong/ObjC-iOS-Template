@@ -1,0 +1,36 @@
+
+//button label
+"btn_delete" = "Delete";
+"btn_proceed" = "Proceed";
+"btn_continue" = "Continue";
+"btn_register" = "Register";
+"btn_login" = "Login";
+"btn_resend_otp" = "Resend OTP";
+"btn_edit" = "Edit";
+"btn_add" = "Add";
+"btn_close" = "Close";
+"btn_exit" = "Exit";
+"btn_ok" = "OK";
+"btn_done" = "Done";
+"btn_save" = "Save";
+"btn_complete" = "Verify";
+"btn_resend_otp_code" = "Resend OTP code";
+"btn_submit" = "Submit";
+"btn_cancel" = "Cancel";
+"btn_try_again" = "Try Again";
+"btn_log_out" = "Logout";
+"btn_take_photo" = "Take Photo";
+"btn_gallery" = "Gallery";
+"btn_skip" = "Skip";
+"btn_show" = "Show";
+"btn_hide" = "Hide";
+"btn_resend" = "Send Again";
+"btn_confirm" = "Confirm";
+"btn_pay" = "Pay";
+"btn_send"="Send";
+"btn_buy" = "Buy";
+"btn_clear" = "Clear";
+"btn_allow" = "Allow";
+"btn_select" = "Select";
+"btn_yes" = "Yes";
+"btn_no" = "No";
