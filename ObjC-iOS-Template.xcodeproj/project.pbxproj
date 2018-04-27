@@ -37,27 +37,6 @@
 		48837EC9209195E40040BACB /* UnifiedTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD122091837B004A3AD6 /* UnifiedTabBarViewController.m */; };
 		48837ECD209195E40040BACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486CCD0020917B87004A3AD6 /* LaunchScreen.storyboard */; };
 		48837ECE209195E40040BACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486CCCF0209179FE004A3AD6 /* Assets.xcassets */; };
-		48837EE3209196870040BACB /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDA209196870040BACB /* LGSideMenuHelper.m */; };
-		48837EE4209196870040BACB /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDA209196870040BACB /* LGSideMenuHelper.m */; };
-		48837EE5209196870040BACB /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDA209196870040BACB /* LGSideMenuHelper.m */; };
-		48837EE6209196870040BACB /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDC209196870040BACB /* LGSideMenuView.m */; };
-		48837EE7209196870040BACB /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDC209196870040BACB /* LGSideMenuView.m */; };
-		48837EE8209196870040BACB /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDC209196870040BACB /* LGSideMenuView.m */; };
-		48837EE9209196870040BACB /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDD209196870040BACB /* LGSideMenuSegue.m */; };
-		48837EEA209196870040BACB /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDD209196870040BACB /* LGSideMenuSegue.m */; };
-		48837EEB209196870040BACB /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDD209196870040BACB /* LGSideMenuSegue.m */; };
-		48837EEC209196870040BACB /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDE209196870040BACB /* LGSideMenuController.m */; };
-		48837EED209196870040BACB /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDE209196870040BACB /* LGSideMenuController.m */; };
-		48837EEE209196870040BACB /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDE209196870040BACB /* LGSideMenuController.m */; };
-		48837EEF209196870040BACB /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDF209196870040BACB /* LGSideMenuGesturesHandler.m */; };
-		48837EF0209196870040BACB /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDF209196870040BACB /* LGSideMenuGesturesHandler.m */; };
-		48837EF1209196870040BACB /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EDF209196870040BACB /* LGSideMenuGesturesHandler.m */; };
-		48837EF2209196870040BACB /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EE0209196870040BACB /* UIViewController+LGSideMenuController.m */; };
-		48837EF3209196870040BACB /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EE0209196870040BACB /* UIViewController+LGSideMenuController.m */; };
-		48837EF4209196870040BACB /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EE0209196870040BACB /* UIViewController+LGSideMenuController.m */; };
-		48837EF5209196870040BACB /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EE2209196870040BACB /* LGSideMenuBorderView.m */; };
-		48837EF6209196870040BACB /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EE2209196870040BACB /* LGSideMenuBorderView.m */; };
-		48837EF7209196870040BACB /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EE2209196870040BACB /* LGSideMenuBorderView.m */; };
 		48837EFB209196C70040BACB /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EFA209196C70040BACB /* Constants.m */; };
 		48837EFC209196C70040BACB /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EFA209196C70040BACB /* Constants.m */; };
 		48837EFD209196C70040BACB /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837EFA209196C70040BACB /* Constants.m */; };
@@ -144,6 +123,30 @@
 		48837F982091CCFB0040BACB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837F962091CCFB0040BACB /* Reachability.m */; };
 		48837F992091CCFB0040BACB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837F962091CCFB0040BACB /* Reachability.m */; };
 		48837F9A2091CCFB0040BACB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837F962091CCFB0040BACB /* Reachability.m */; };
+		48C3A0892092F89800352FB4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0872092F89800352FB4 /* MBProgressHUD.m */; };
+		48C3A08A2092F89800352FB4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0872092F89800352FB4 /* MBProgressHUD.m */; };
+		48C3A08B2092F89800352FB4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0872092F89800352FB4 /* MBProgressHUD.m */; };
+		48C3A0E32093078100352FB4 /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DA2093078000352FB4 /* LGSideMenuHelper.m */; };
+		48C3A0E42093078100352FB4 /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DA2093078000352FB4 /* LGSideMenuHelper.m */; };
+		48C3A0E52093078100352FB4 /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DA2093078000352FB4 /* LGSideMenuHelper.m */; };
+		48C3A0E62093078100352FB4 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DC2093078000352FB4 /* LGSideMenuView.m */; };
+		48C3A0E72093078100352FB4 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DC2093078000352FB4 /* LGSideMenuView.m */; };
+		48C3A0E82093078100352FB4 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DC2093078000352FB4 /* LGSideMenuView.m */; };
+		48C3A0E92093078100352FB4 /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DD2093078000352FB4 /* LGSideMenuSegue.m */; };
+		48C3A0EA2093078100352FB4 /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DD2093078000352FB4 /* LGSideMenuSegue.m */; };
+		48C3A0EB2093078100352FB4 /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DD2093078000352FB4 /* LGSideMenuSegue.m */; };
+		48C3A0EC2093078100352FB4 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DE2093078000352FB4 /* LGSideMenuController.m */; };
+		48C3A0ED2093078100352FB4 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DE2093078000352FB4 /* LGSideMenuController.m */; };
+		48C3A0EE2093078100352FB4 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DE2093078000352FB4 /* LGSideMenuController.m */; };
+		48C3A0EF2093078100352FB4 /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DF2093078000352FB4 /* LGSideMenuGesturesHandler.m */; };
+		48C3A0F02093078100352FB4 /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DF2093078000352FB4 /* LGSideMenuGesturesHandler.m */; };
+		48C3A0F12093078100352FB4 /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0DF2093078000352FB4 /* LGSideMenuGesturesHandler.m */; };
+		48C3A0F22093078100352FB4 /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0E02093078000352FB4 /* UIViewController+LGSideMenuController.m */; };
+		48C3A0F32093078100352FB4 /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0E02093078000352FB4 /* UIViewController+LGSideMenuController.m */; };
+		48C3A0F42093078100352FB4 /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0E02093078000352FB4 /* UIViewController+LGSideMenuController.m */; };
+		48C3A0F52093078100352FB4 /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0E22093078000352FB4 /* LGSideMenuBorderView.m */; };
+		48C3A0F62093078100352FB4 /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0E22093078000352FB4 /* LGSideMenuBorderView.m */; };
+		48C3A0F72093078100352FB4 /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0E22093078000352FB4 /* LGSideMenuBorderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,20 +174,6 @@
 		48837EB7209195920040BACB /* ObjC-iOS-Template copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjC-iOS-Template copy2-Info.plist"; path = "/Users/congnguyen/Github/ObjC-iOS-Template/ObjC-iOS-Template copy2-Info.plist"; sourceTree = "<absolute>"; };
 		48837ED2209195E40040BACB /* ObjC-iOS-TemplatePROD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjC-iOS-TemplatePROD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48837ED3209195E40040BACB /* ObjC-iOS-TemplateQA copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjC-iOS-TemplateQA copy-Info.plist"; path = "/Users/congnguyen/Github/ObjC-iOS-Template/ObjC-iOS-TemplateQA copy-Info.plist"; sourceTree = "<absolute>"; };
-		48837ED5209196870040BACB /* LGSideMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuSegue.h; sourceTree = "<group>"; };
-		48837ED6209196870040BACB /* LGSideMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuView.h; sourceTree = "<group>"; };
-		48837ED7209196870040BACB /* LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuController.h; sourceTree = "<group>"; };
-		48837ED8209196870040BACB /* LGSideMenuGesturesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuGesturesHandler.h; sourceTree = "<group>"; };
-		48837ED9209196870040BACB /* LGSideMenuBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuBorderView.h; sourceTree = "<group>"; };
-		48837EDA209196870040BACB /* LGSideMenuHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuHelper.m; sourceTree = "<group>"; };
-		48837EDB209196870040BACB /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
-		48837EDC209196870040BACB /* LGSideMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuView.m; sourceTree = "<group>"; };
-		48837EDD209196870040BACB /* LGSideMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuSegue.m; sourceTree = "<group>"; };
-		48837EDE209196870040BACB /* LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuController.m; sourceTree = "<group>"; };
-		48837EDF209196870040BACB /* LGSideMenuGesturesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuGesturesHandler.m; sourceTree = "<group>"; };
-		48837EE0209196870040BACB /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
-		48837EE1209196870040BACB /* LGSideMenuHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuHelper.h; sourceTree = "<group>"; };
-		48837EE2209196870040BACB /* LGSideMenuBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuBorderView.m; sourceTree = "<group>"; };
 		48837EF8209196B70040BACB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		48837EF9209196C60040BACB /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		48837EFA209196C70040BACB /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
@@ -247,6 +236,22 @@
 		48837F922091CCA50040BACB /* KSReachability-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KSReachability-Prefix.pch"; sourceTree = "<group>"; };
 		48837F962091CCFB0040BACB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		48837F972091CCFB0040BACB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		48C3A0872092F89800352FB4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		48C3A0882092F89800352FB4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		48C3A0D52093078000352FB4 /* LGSideMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuSegue.h; sourceTree = "<group>"; };
+		48C3A0D62093078000352FB4 /* LGSideMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuView.h; sourceTree = "<group>"; };
+		48C3A0D72093078000352FB4 /* LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuController.h; sourceTree = "<group>"; };
+		48C3A0D82093078000352FB4 /* LGSideMenuGesturesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuGesturesHandler.h; sourceTree = "<group>"; };
+		48C3A0D92093078000352FB4 /* LGSideMenuBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuBorderView.h; sourceTree = "<group>"; };
+		48C3A0DA2093078000352FB4 /* LGSideMenuHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuHelper.m; sourceTree = "<group>"; };
+		48C3A0DB2093078000352FB4 /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
+		48C3A0DC2093078000352FB4 /* LGSideMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuView.m; sourceTree = "<group>"; };
+		48C3A0DD2093078000352FB4 /* LGSideMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuSegue.m; sourceTree = "<group>"; };
+		48C3A0DE2093078000352FB4 /* LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuController.m; sourceTree = "<group>"; };
+		48C3A0DF2093078000352FB4 /* LGSideMenuGesturesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuGesturesHandler.m; sourceTree = "<group>"; };
+		48C3A0E02093078000352FB4 /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
+		48C3A0E12093078000352FB4 /* LGSideMenuHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuHelper.h; sourceTree = "<group>"; };
+		48C3A0E22093078000352FB4 /* LGSideMenuBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuBorderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,13 +325,15 @@
 		486CCD0220917B9F004A3AD6 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				48C3A0D42093078000352FB4 /* LGSideMenuController */,
+				48C3A0882092F89800352FB4 /* MBProgressHUD.h */,
+				48C3A0872092F89800352FB4 /* MBProgressHUD.m */,
 				48837F972091CCFB0040BACB /* Reachability.h */,
 				48837F962091CCFB0040BACB /* Reachability.m */,
 				48837F8F2091CCA50040BACB /* KSReachability */,
 				48837F8A2091C8FF0040BACB /* UYLPasswordManager.h */,
 				48837F8B2091C8FF0040BACB /* UYLPasswordManager.m */,
 				48837F222091BC9B0040BACB /* SDWebImage */,
-				48837ED4209196870040BACB /* LGSideMenuController */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -412,27 +419,6 @@
 				486CCD1C20918488004A3AD6 /* HomeViewController.m */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		48837ED4209196870040BACB /* LGSideMenuController */ = {
-			isa = PBXGroup;
-			children = (
-				48837ED5209196870040BACB /* LGSideMenuSegue.h */,
-				48837ED6209196870040BACB /* LGSideMenuView.h */,
-				48837ED7209196870040BACB /* LGSideMenuController.h */,
-				48837ED8209196870040BACB /* LGSideMenuGesturesHandler.h */,
-				48837ED9209196870040BACB /* LGSideMenuBorderView.h */,
-				48837EDA209196870040BACB /* LGSideMenuHelper.m */,
-				48837EDB209196870040BACB /* UIViewController+LGSideMenuController.h */,
-				48837EDC209196870040BACB /* LGSideMenuView.m */,
-				48837EDD209196870040BACB /* LGSideMenuSegue.m */,
-				48837EDE209196870040BACB /* LGSideMenuController.m */,
-				48837EDF209196870040BACB /* LGSideMenuGesturesHandler.m */,
-				48837EE0209196870040BACB /* UIViewController+LGSideMenuController.m */,
-				48837EE1209196870040BACB /* LGSideMenuHelper.h */,
-				48837EE2209196870040BACB /* LGSideMenuBorderView.m */,
-			);
-			path = LGSideMenuController;
 			sourceTree = "<group>";
 		};
 		48837F03209197280040BACB /* Frameworks */ = {
@@ -523,6 +509,28 @@
 				48837F922091CCA50040BACB /* KSReachability-Prefix.pch */,
 			);
 			path = KSReachability;
+			sourceTree = "<group>";
+		};
+		48C3A0D42093078000352FB4 /* LGSideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				48C3A0D52093078000352FB4 /* LGSideMenuSegue.h */,
+				48C3A0D62093078000352FB4 /* LGSideMenuView.h */,
+				48C3A0D72093078000352FB4 /* LGSideMenuController.h */,
+				48C3A0D82093078000352FB4 /* LGSideMenuGesturesHandler.h */,
+				48C3A0D92093078000352FB4 /* LGSideMenuBorderView.h */,
+				48C3A0DA2093078000352FB4 /* LGSideMenuHelper.m */,
+				48C3A0DB2093078000352FB4 /* UIViewController+LGSideMenuController.h */,
+				48C3A0DC2093078000352FB4 /* LGSideMenuView.m */,
+				48C3A0DD2093078000352FB4 /* LGSideMenuSegue.m */,
+				48C3A0DE2093078000352FB4 /* LGSideMenuController.m */,
+				48C3A0DF2093078000352FB4 /* LGSideMenuGesturesHandler.m */,
+				48C3A0E02093078000352FB4 /* UIViewController+LGSideMenuController.m */,
+				48C3A0E12093078000352FB4 /* LGSideMenuHelper.h */,
+				48C3A0E22093078000352FB4 /* LGSideMenuBorderView.m */,
+			);
+			name = LGSideMenuController;
+			path = ../../../liquidpay/Liquid/Vendor/LGSideMenuController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -660,17 +668,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				48837F4B2091BC9B0040BACB /* SDWebImageDecoder.m in Sources */,
-				48837EEF209196870040BACB /* LGSideMenuGesturesHandler.m in Sources */,
 				48837F0B2091BBE80040BACB /* UINavigationBar+FixedHeightWhenStatusBarHidden.m in Sources */,
 				48837F1C2091BC740040BACB /* NSString+TextDirectionality.m in Sources */,
 				486CCD1920918449004A3AD6 /* LeftSliderViewController.m in Sources */,
 				486CCD162091840D004A3AD6 /* SplashViewController.m in Sources */,
 				48837F712091BD020040BACB /* BaseNavigationController.m in Sources */,
 				486CCCF7209179FE004A3AD6 /* main.m in Sources */,
+				48C3A0EF2093078100352FB4 /* LGSideMenuGesturesHandler.m in Sources */,
 				48837F602091BC9B0040BACB /* SDImageCache.m in Sources */,
 				48837F932091CCA50040BACB /* KSReachability.m in Sources */,
 				48837F982091CCFB0040BACB /* Reachability.m in Sources */,
 				48837F632091BC9B0040BACB /* SDWebImageDownloaderOperation.m in Sources */,
+				48C3A0F52093078100352FB4 /* LGSideMenuBorderView.m in Sources */,
 				486CCD2020918510004A3AD6 /* Helper.m in Sources */,
 				48837F1F2091BC740040BACB /* NSString+Color.m in Sources */,
 				486CCD0C20918069004A3AD6 /* Utility.m in Sources */,
@@ -681,26 +690,26 @@
 				48837F6C2091BC9B0040BACB /* UIButton+WebCache.m in Sources */,
 				48837F512091BC9B0040BACB /* SDWebImageDownloader.m in Sources */,
 				48837F542091BC9B0040BACB /* UIImage+GIF.m in Sources */,
+				48C3A0E62093078100352FB4 /* LGSideMenuView.m in Sources */,
 				48837F422091BC9B0040BACB /* UIImage+WebP.m in Sources */,
 				486CCD5D20919480004A3AD6 /* AppDelegate.m in Sources */,
 				48837EFB209196C70040BACB /* Constants.m in Sources */,
+				48C3A0E92093078100352FB4 /* LGSideMenuSegue.m in Sources */,
+				48C3A0EC2093078100352FB4 /* LGSideMenuController.m in Sources */,
 				48837F762091BFAB0040BACB /* BaseViewController.m in Sources */,
 				48837F5D2091BC9B0040BACB /* SDWebImagePrefetcher.m in Sources */,
 				486CCD132091837B004A3AD6 /* UnifiedTabBarViewController.m in Sources */,
-				48837EE3209196870040BACB /* LGSideMenuHelper.m in Sources */,
-				48837EF2209196870040BACB /* UIViewController+LGSideMenuController.m in Sources */,
+				48C3A0892092F89800352FB4 /* MBProgressHUD.m in Sources */,
 				48837F4E2091BC9B0040BACB /* UIImageView+HighlightedWebCache.m in Sources */,
 				48837F482091BC9B0040BACB /* SDWebImageManager.m in Sources */,
 				48837F662091BC9B0040BACB /* NSData+ImageContentType.m in Sources */,
 				48837F572091BC9B0040BACB /* UIImage+MultiFormat.m in Sources */,
+				48C3A0E32093078100352FB4 /* LGSideMenuHelper.m in Sources */,
 				48837F452091BC9B0040BACB /* MKAnnotationView+WebCache.m in Sources */,
-				48837EEC209196870040BACB /* LGSideMenuController.m in Sources */,
-				48837EE6209196870040BACB /* LGSideMenuView.m in Sources */,
-				48837EF5209196870040BACB /* LGSideMenuBorderView.m in Sources */,
 				48837F102091BBFC0040BACB /* UIBarButtonItem+Badge.m in Sources */,
 				48837F5A2091BC9B0040BACB /* SDWebImageCompat.m in Sources */,
-				48837EE9209196870040BACB /* LGSideMenuSegue.m in Sources */,
 				48837F00209196DD0040BACB /* UIView+FrameAdjustments.m in Sources */,
+				48C3A0F22093078100352FB4 /* UIViewController+LGSideMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,17 +718,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				48837F4C2091BC9B0040BACB /* SDWebImageDecoder.m in Sources */,
-				48837EF0209196870040BACB /* LGSideMenuGesturesHandler.m in Sources */,
 				48837F0C2091BBE80040BACB /* UINavigationBar+FixedHeightWhenStatusBarHidden.m in Sources */,
 				48837F1D2091BC740040BACB /* NSString+TextDirectionality.m in Sources */,
 				48837E9E209195920040BACB /* LeftSliderViewController.m in Sources */,
 				48837EA1209195920040BACB /* SplashViewController.m in Sources */,
 				48837F722091BD020040BACB /* BaseNavigationController.m in Sources */,
 				48837EA4209195920040BACB /* main.m in Sources */,
+				48C3A0F02093078100352FB4 /* LGSideMenuGesturesHandler.m in Sources */,
 				48837F612091BC9B0040BACB /* SDImageCache.m in Sources */,
 				48837F942091CCA50040BACB /* KSReachability.m in Sources */,
 				48837F992091CCFB0040BACB /* Reachability.m in Sources */,
 				48837F642091BC9B0040BACB /* SDWebImageDownloaderOperation.m in Sources */,
+				48C3A0F62093078100352FB4 /* LGSideMenuBorderView.m in Sources */,
 				48837EA5209195920040BACB /* Helper.m in Sources */,
 				48837F202091BC740040BACB /* NSString+Color.m in Sources */,
 				48837EA8209195920040BACB /* Utility.m in Sources */,
@@ -730,26 +740,26 @@
 				48837F6D2091BC9B0040BACB /* UIButton+WebCache.m in Sources */,
 				48837F522091BC9B0040BACB /* SDWebImageDownloader.m in Sources */,
 				48837F552091BC9B0040BACB /* UIImage+GIF.m in Sources */,
+				48C3A0E72093078100352FB4 /* LGSideMenuView.m in Sources */,
 				48837F432091BC9B0040BACB /* UIImage+WebP.m in Sources */,
 				48837EAC209195920040BACB /* AppDelegate.m in Sources */,
 				48837EFC209196C70040BACB /* Constants.m in Sources */,
+				48C3A0EA2093078100352FB4 /* LGSideMenuSegue.m in Sources */,
+				48C3A0ED2093078100352FB4 /* LGSideMenuController.m in Sources */,
 				48837F772091BFAB0040BACB /* BaseViewController.m in Sources */,
 				48837F5E2091BC9B0040BACB /* SDWebImagePrefetcher.m in Sources */,
 				48837EAD209195920040BACB /* UnifiedTabBarViewController.m in Sources */,
-				48837EE4209196870040BACB /* LGSideMenuHelper.m in Sources */,
-				48837EF3209196870040BACB /* UIViewController+LGSideMenuController.m in Sources */,
+				48C3A08A2092F89800352FB4 /* MBProgressHUD.m in Sources */,
 				48837F4F2091BC9B0040BACB /* UIImageView+HighlightedWebCache.m in Sources */,
 				48837F492091BC9B0040BACB /* SDWebImageManager.m in Sources */,
 				48837F672091BC9B0040BACB /* NSData+ImageContentType.m in Sources */,
 				48837F582091BC9B0040BACB /* UIImage+MultiFormat.m in Sources */,
+				48C3A0E42093078100352FB4 /* LGSideMenuHelper.m in Sources */,
 				48837F462091BC9B0040BACB /* MKAnnotationView+WebCache.m in Sources */,
-				48837EED209196870040BACB /* LGSideMenuController.m in Sources */,
-				48837EE7209196870040BACB /* LGSideMenuView.m in Sources */,
-				48837EF6209196870040BACB /* LGSideMenuBorderView.m in Sources */,
 				48837F112091BBFC0040BACB /* UIBarButtonItem+Badge.m in Sources */,
 				48837F5B2091BC9B0040BACB /* SDWebImageCompat.m in Sources */,
-				48837EEA209196870040BACB /* LGSideMenuSegue.m in Sources */,
 				48837F01209196DD0040BACB /* UIView+FrameAdjustments.m in Sources */,
+				48C3A0F32093078100352FB4 /* UIViewController+LGSideMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,17 +768,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				48837F4D2091BC9B0040BACB /* SDWebImageDecoder.m in Sources */,
-				48837EF1209196870040BACB /* LGSideMenuGesturesHandler.m in Sources */,
 				48837F0D2091BBE80040BACB /* UINavigationBar+FixedHeightWhenStatusBarHidden.m in Sources */,
 				48837F1E2091BC740040BACB /* NSString+TextDirectionality.m in Sources */,
 				48837EBA209195E40040BACB /* LeftSliderViewController.m in Sources */,
 				48837EBD209195E40040BACB /* SplashViewController.m in Sources */,
 				48837F732091BD020040BACB /* BaseNavigationController.m in Sources */,
 				48837EC0209195E40040BACB /* main.m in Sources */,
+				48C3A0F12093078100352FB4 /* LGSideMenuGesturesHandler.m in Sources */,
 				48837F622091BC9B0040BACB /* SDImageCache.m in Sources */,
 				48837F952091CCA50040BACB /* KSReachability.m in Sources */,
 				48837F9A2091CCFB0040BACB /* Reachability.m in Sources */,
 				48837F652091BC9B0040BACB /* SDWebImageDownloaderOperation.m in Sources */,
+				48C3A0F72093078100352FB4 /* LGSideMenuBorderView.m in Sources */,
 				48837EC1209195E40040BACB /* Helper.m in Sources */,
 				48837F212091BC740040BACB /* NSString+Color.m in Sources */,
 				48837EC4209195E40040BACB /* Utility.m in Sources */,
@@ -779,26 +790,26 @@
 				48837F6E2091BC9B0040BACB /* UIButton+WebCache.m in Sources */,
 				48837F532091BC9B0040BACB /* SDWebImageDownloader.m in Sources */,
 				48837F562091BC9B0040BACB /* UIImage+GIF.m in Sources */,
+				48C3A0E82093078100352FB4 /* LGSideMenuView.m in Sources */,
 				48837F442091BC9B0040BACB /* UIImage+WebP.m in Sources */,
 				48837EC8209195E40040BACB /* AppDelegate.m in Sources */,
 				48837EFD209196C70040BACB /* Constants.m in Sources */,
+				48C3A0EB2093078100352FB4 /* LGSideMenuSegue.m in Sources */,
+				48C3A0EE2093078100352FB4 /* LGSideMenuController.m in Sources */,
 				48837F782091BFAB0040BACB /* BaseViewController.m in Sources */,
 				48837F5F2091BC9B0040BACB /* SDWebImagePrefetcher.m in Sources */,
 				48837EC9209195E40040BACB /* UnifiedTabBarViewController.m in Sources */,
-				48837EE5209196870040BACB /* LGSideMenuHelper.m in Sources */,
-				48837EF4209196870040BACB /* UIViewController+LGSideMenuController.m in Sources */,
+				48C3A08B2092F89800352FB4 /* MBProgressHUD.m in Sources */,
 				48837F502091BC9B0040BACB /* UIImageView+HighlightedWebCache.m in Sources */,
 				48837F4A2091BC9B0040BACB /* SDWebImageManager.m in Sources */,
 				48837F682091BC9B0040BACB /* NSData+ImageContentType.m in Sources */,
 				48837F592091BC9B0040BACB /* UIImage+MultiFormat.m in Sources */,
+				48C3A0E52093078100352FB4 /* LGSideMenuHelper.m in Sources */,
 				48837F472091BC9B0040BACB /* MKAnnotationView+WebCache.m in Sources */,
-				48837EEE209196870040BACB /* LGSideMenuController.m in Sources */,
-				48837EE8209196870040BACB /* LGSideMenuView.m in Sources */,
-				48837EF7209196870040BACB /* LGSideMenuBorderView.m in Sources */,
 				48837F122091BBFC0040BACB /* UIBarButtonItem+Badge.m in Sources */,
 				48837F5C2091BC9B0040BACB /* SDWebImageCompat.m in Sources */,
-				48837EEB209196870040BACB /* LGSideMenuSegue.m in Sources */,
 				48837F02209196DD0040BACB /* UIView+FrameAdjustments.m in Sources */,
+				48C3A0F42093078100352FB4 /* UIViewController+LGSideMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

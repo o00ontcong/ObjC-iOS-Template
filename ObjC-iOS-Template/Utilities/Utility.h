@@ -174,6 +174,7 @@ typedef NS_OPTIONS(NSInteger, ComfortViewType) {
 +(BOOL)isFirstTimeOfSimpleMode;
 +(BOOL)date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate;
 +(void)activeButton:(UIButton *)button isEnable:(BOOL)enable;
++(float)getRespectiveFieldHeight;
 
 
 //Screen sizes constants
@@ -250,5 +251,15 @@ typedef NS_OPTIONS(NSInteger, ComfortViewType) {
 #define Mint_1 0x324BA5
 #define kGradientLayerKey @"MyGradientLayer"
 
+#define TEXTFIELD_BG_COLOR [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0]
+#define BUTTON_BG [UIColor colorWithRed:19.0/255.0 green:201.0/255.0 blue:254.0/255.0 alpha:1.0]
+#define TEXT_COLOR [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]
+
+//textfield sizes for different devices
+#define DEFAULT_TEXTFIELD_SIZE DEFAULT_TEXTFIELD_SIZE_6P
+#define DEFAULT_TEXTFIELD_SIZE_6P 56.0f
+#define DEFAULT_TEXTFIELD_SIZE_6 52.0f
+#define DEFAULT_TEXTFIELD_SIZE_5 48.0f
+#define DEFAULT_TEXTFIELD_SIZE_4 42.0f
 @end
 

@@ -1654,4 +1654,15 @@
         [button setBackgroundColor:[UIColor lightGrayColor]];
     button.enabled = enable;
 }
++(float)getRespectiveFieldHeight {
+    
+    if(IS_IPHONE_4_OR_LESS_NEW){
+        return DEFAULT_TEXTFIELD_SIZE_4;
+    }else if (IS_IPHONE_5_NEW) {
+        return  DEFAULT_TEXTFIELD_SIZE_5;
+    }else if (IS_IPHONE_6_NEW){
+        return  DEFAULT_TEXTFIELD_SIZE_6;
+    }
+    return  DEFAULT_TEXTFIELD_SIZE_6P;
+}
 @end

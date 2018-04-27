@@ -52,7 +52,7 @@
                                 leftViewController:leftVC
                                rightViewController:nil];
         sideMenuController.leftViewWidth = LEFT_SLIDER_VIEW_WIDTH;
-        sideMenuController.leftViewPresentationStyle = LGSideMenuPresentationStyleSlideBelow;
+        sideMenuController.leftViewPresentationStyle = LGSideMenuPresentationStyleSlideAbove;
         sideMenuController.delegate = leftVC;
         [sideMenuController setLeftViewSwipeGestureEnabled:NO];
         self.window.rootViewController = sideMenuController;
