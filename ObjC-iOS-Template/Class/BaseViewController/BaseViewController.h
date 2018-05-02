@@ -11,6 +11,7 @@
 #import "UIView+FrameAdjustments.h"
 #import "UIViewController+LGSideMenuController.h"
 #import "LGSideMenuController.h"
+#import "UIView+UIViewUtils.h"
 @interface BaseViewController : UIViewController <UITextFieldDelegate>{
     UITapGestureRecognizer *tap;
     

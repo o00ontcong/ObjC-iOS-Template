@@ -7,3 +7,4 @@
 //
 
 #define LOCALE_BTN_OK @"btn_ok"
+#define TAB_BAR_ITEM @"Item"

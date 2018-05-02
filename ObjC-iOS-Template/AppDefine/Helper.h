@@ -10,5 +10,4 @@
 
 @interface Helper : NSObject
 +(BOOL)isCheckAuthentication;
-+(NSString *)localizedString:(NSString *) str;
 @end

@@ -12,13 +12,71 @@
 		486CCD0120917B87004A3AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486CCD0020917B87004A3AD6 /* LaunchScreen.storyboard */; };
 		486CCD0C20918069004A3AD6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD0B20918069004A3AD6 /* Utility.m */; };
 		486CCD132091837B004A3AD6 /* UnifiedTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD122091837B004A3AD6 /* UnifiedTabBarViewController.m */; };
-		486CCD162091840D004A3AD6 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD152091840D004A3AD6 /* SplashViewController.m */; };
 		486CCD1920918449004A3AD6 /* LeftSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD1820918449004A3AD6 /* LeftSliderViewController.m */; };
 		486CCD1D20918488004A3AD6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD1C20918488004A3AD6 /* HomeViewController.m */; };
 		486CCD2020918510004A3AD6 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD1F20918510004A3AD6 /* Helper.m */; };
 		486CCD5D20919480004A3AD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD5C20919480004A3AD6 /* AppDelegate.m */; };
+		4870B92E2099B207003FA601 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B92D2099B207003FA601 /* SplashViewController.m */; };
+		4870B92F2099B207003FA601 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B92D2099B207003FA601 /* SplashViewController.m */; };
+		4870B9302099B207003FA601 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B92D2099B207003FA601 /* SplashViewController.m */; };
+		4870B9512099B3AA003FA601 /* IFTTTAnimationFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9322099B3AA003FA601 /* IFTTTAnimationFrame.m */; };
+		4870B9522099B3AA003FA601 /* IFTTTAnimationFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9322099B3AA003FA601 /* IFTTTAnimationFrame.m */; };
+		4870B9532099B3AA003FA601 /* IFTTTAnimationFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9322099B3AA003FA601 /* IFTTTAnimationFrame.m */; };
+		4870B9542099B3AA003FA601 /* IFTTTAngleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9342099B3AA003FA601 /* IFTTTAngleAnimation.m */; };
+		4870B9552099B3AA003FA601 /* IFTTTAngleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9342099B3AA003FA601 /* IFTTTAngleAnimation.m */; };
+		4870B9562099B3AA003FA601 /* IFTTTAngleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9342099B3AA003FA601 /* IFTTTAngleAnimation.m */; };
+		4870B9572099B3AA003FA601 /* IFTTTAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9362099B3AA003FA601 /* IFTTTAnimator.m */; };
+		4870B9582099B3AA003FA601 /* IFTTTAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9362099B3AA003FA601 /* IFTTTAnimator.m */; };
+		4870B9592099B3AA003FA601 /* IFTTTAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9362099B3AA003FA601 /* IFTTTAnimator.m */; };
+		4870B95A2099B3AA003FA601 /* IFTTTColorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9392099B3AA003FA601 /* IFTTTColorAnimation.m */; };
+		4870B95B2099B3AA003FA601 /* IFTTTColorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9392099B3AA003FA601 /* IFTTTColorAnimation.m */; };
+		4870B95C2099B3AA003FA601 /* IFTTTColorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9392099B3AA003FA601 /* IFTTTColorAnimation.m */; };
+		4870B95D2099B3AA003FA601 /* IFTTTAlphaAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B93B2099B3AA003FA601 /* IFTTTAlphaAnimation.m */; };
+		4870B95E2099B3AA003FA601 /* IFTTTAlphaAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B93B2099B3AA003FA601 /* IFTTTAlphaAnimation.m */; };
+		4870B95F2099B3AA003FA601 /* IFTTTAlphaAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B93B2099B3AA003FA601 /* IFTTTAlphaAnimation.m */; };
+		4870B9602099B3AA003FA601 /* IFTTTConstraintsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B93C2099B3AA003FA601 /* IFTTTConstraintsAnimation.m */; };
+		4870B9612099B3AA003FA601 /* IFTTTConstraintsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B93C2099B3AA003FA601 /* IFTTTConstraintsAnimation.m */; };
+		4870B9622099B3AA003FA601 /* IFTTTConstraintsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B93C2099B3AA003FA601 /* IFTTTConstraintsAnimation.m */; };
+		4870B9632099B3AA003FA601 /* IFTTTEasingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B93F2099B3AA003FA601 /* IFTTTEasingFunction.m */; };
+		4870B9642099B3AA003FA601 /* IFTTTEasingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B93F2099B3AA003FA601 /* IFTTTEasingFunction.m */; };
+		4870B9652099B3AA003FA601 /* IFTTTEasingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B93F2099B3AA003FA601 /* IFTTTEasingFunction.m */; };
+		4870B9662099B3AA003FA601 /* IFTTTAnimationKeyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9422099B3AA003FA601 /* IFTTTAnimationKeyFrame.m */; };
+		4870B9672099B3AA003FA601 /* IFTTTAnimationKeyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9422099B3AA003FA601 /* IFTTTAnimationKeyFrame.m */; };
+		4870B9682099B3AA003FA601 /* IFTTTAnimationKeyFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9422099B3AA003FA601 /* IFTTTAnimationKeyFrame.m */; };
+		4870B9692099B3AA003FA601 /* IFTTTHideAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9442099B3AA003FA601 /* IFTTTHideAnimation.m */; };
+		4870B96A2099B3AA003FA601 /* IFTTTHideAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9442099B3AA003FA601 /* IFTTTHideAnimation.m */; };
+		4870B96B2099B3AA003FA601 /* IFTTTHideAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9442099B3AA003FA601 /* IFTTTHideAnimation.m */; };
+		4870B96C2099B3AA003FA601 /* IFTTTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9462099B3AA003FA601 /* IFTTTAnimation.m */; };
+		4870B96D2099B3AA003FA601 /* IFTTTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9462099B3AA003FA601 /* IFTTTAnimation.m */; };
+		4870B96E2099B3AA003FA601 /* IFTTTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9462099B3AA003FA601 /* IFTTTAnimation.m */; };
+		4870B96F2099B3AA003FA601 /* IFTTTScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9482099B3AA003FA601 /* IFTTTScaleAnimation.m */; };
+		4870B9702099B3AA003FA601 /* IFTTTScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9482099B3AA003FA601 /* IFTTTScaleAnimation.m */; };
+		4870B9712099B3AA003FA601 /* IFTTTScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9482099B3AA003FA601 /* IFTTTScaleAnimation.m */; };
+		4870B9722099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9492099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m */; };
+		4870B9732099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9492099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m */; };
+		4870B9742099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9492099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m */; };
+		4870B9752099B3AA003FA601 /* IFTTTTransform3DAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B94B2099B3AA003FA601 /* IFTTTTransform3DAnimation.m */; };
+		4870B9762099B3AA003FA601 /* IFTTTTransform3DAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B94B2099B3AA003FA601 /* IFTTTTransform3DAnimation.m */; };
+		4870B9772099B3AA003FA601 /* IFTTTTransform3DAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B94B2099B3AA003FA601 /* IFTTTTransform3DAnimation.m */; };
+		4870B9782099B3AA003FA601 /* IFTTTFrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B94C2099B3AA003FA601 /* IFTTTFrameAnimation.m */; };
+		4870B9792099B3AA003FA601 /* IFTTTFrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B94C2099B3AA003FA601 /* IFTTTFrameAnimation.m */; };
+		4870B97A2099B3AA003FA601 /* IFTTTFrameAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B94C2099B3AA003FA601 /* IFTTTFrameAnimation.m */; };
+		4870B97B2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B94F2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m */; };
+		4870B97C2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B94F2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m */; };
+		4870B97D2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B94F2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m */; };
+		4870B9802099B578003FA601 /* ProjectStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B97F2099B578003FA601 /* ProjectStyle.m */; };
+		4870B9812099B578003FA601 /* ProjectStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B97F2099B578003FA601 /* ProjectStyle.m */; };
+		4870B9822099B578003FA601 /* ProjectStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B97F2099B578003FA601 /* ProjectStyle.m */; };
+		4870B9852099B799003FA601 /* UIView+UIViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9832099B799003FA601 /* UIView+UIViewUtils.m */; };
+		4870B9862099B799003FA601 /* UIView+UIViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9832099B799003FA601 /* UIView+UIViewUtils.m */; };
+		4870B9872099B799003FA601 /* UIView+UIViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B9832099B799003FA601 /* UIView+UIViewUtils.m */; };
+		4870B9962099B7B1003FA601 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B98E2099B7B1003FA601 /* UIView+Additions.m */; };
+		4870B9972099B7B1003FA601 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B98E2099B7B1003FA601 /* UIView+Additions.m */; };
+		4870B9982099B7B1003FA601 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B98E2099B7B1003FA601 /* UIView+Additions.m */; };
+		4870B9992099B7B1003FA601 /* UILabel+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B98F2099B7B1003FA601 /* UILabel+Utils.m */; };
+		4870B99A2099B7B1003FA601 /* UILabel+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B98F2099B7B1003FA601 /* UILabel+Utils.m */; };
+		4870B99B2099B7B1003FA601 /* UILabel+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870B98F2099B7B1003FA601 /* UILabel+Utils.m */; };
 		48837E9E209195920040BACB /* LeftSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD1820918449004A3AD6 /* LeftSliderViewController.m */; };
-		48837EA1209195920040BACB /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD152091840D004A3AD6 /* SplashViewController.m */; };
 		48837EA4209195920040BACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCCF6209179FE004A3AD6 /* main.m */; };
 		48837EA5209195920040BACB /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD1F20918510004A3AD6 /* Helper.m */; };
 		48837EA8209195920040BACB /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD0B20918069004A3AD6 /* Utility.m */; };
@@ -28,7 +86,6 @@
 		48837EB1209195920040BACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486CCD0020917B87004A3AD6 /* LaunchScreen.storyboard */; };
 		48837EB2209195920040BACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486CCCF0209179FE004A3AD6 /* Assets.xcassets */; };
 		48837EBA209195E40040BACB /* LeftSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD1820918449004A3AD6 /* LeftSliderViewController.m */; };
-		48837EBD209195E40040BACB /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD152091840D004A3AD6 /* SplashViewController.m */; };
 		48837EC0209195E40040BACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCCF6209179FE004A3AD6 /* main.m */; };
 		48837EC1209195E40040BACB /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD1F20918510004A3AD6 /* Helper.m */; };
 		48837EC4209195E40040BACB /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCD0B20918069004A3AD6 /* Utility.m */; };
@@ -159,8 +216,6 @@
 		486CCD0B20918069004A3AD6 /* Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		486CCD112091837B004A3AD6 /* UnifiedTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnifiedTabBarViewController.h; sourceTree = "<group>"; };
 		486CCD122091837B004A3AD6 /* UnifiedTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnifiedTabBarViewController.m; sourceTree = "<group>"; };
-		486CCD142091840D004A3AD6 /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
-		486CCD152091840D004A3AD6 /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		486CCD1720918449004A3AD6 /* LeftSliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftSliderViewController.h; sourceTree = "<group>"; };
 		486CCD1820918449004A3AD6 /* LeftSliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSliderViewController.m; sourceTree = "<group>"; };
 		486CCD1B20918488004A3AD6 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -170,6 +225,48 @@
 		486CCD5B20919480004A3AD6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		486CCD5C20919480004A3AD6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		486CCD79209194F2004A3AD6 /* ObjC-iOS-Template copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjC-iOS-Template copy-Info.plist"; path = "/Users/congnguyen/Github/ObjC-iOS-Template/ObjC-iOS-Template copy-Info.plist"; sourceTree = "<absolute>"; };
+		4870B92C2099B207003FA601 /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		4870B92D2099B207003FA601 /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		4870B9322099B3AA003FA601 /* IFTTTAnimationFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTAnimationFrame.m; sourceTree = "<group>"; };
+		4870B9332099B3AA003FA601 /* IFTTTHideAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTHideAnimation.h; sourceTree = "<group>"; };
+		4870B9342099B3AA003FA601 /* IFTTTAngleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTAngleAnimation.m; sourceTree = "<group>"; };
+		4870B9352099B3AA003FA601 /* IFTTTAnimationKeyFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTAnimationKeyFrame.h; sourceTree = "<group>"; };
+		4870B9362099B3AA003FA601 /* IFTTTAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTAnimator.m; sourceTree = "<group>"; };
+		4870B9372099B3AA003FA601 /* IFTTTAnimatedScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTAnimatedScrollViewController.h; sourceTree = "<group>"; };
+		4870B9382099B3AA003FA601 /* IFTTTScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTScaleAnimation.h; sourceTree = "<group>"; };
+		4870B9392099B3AA003FA601 /* IFTTTColorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTColorAnimation.m; sourceTree = "<group>"; };
+		4870B93A2099B3AA003FA601 /* IFTTTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTAnimation.h; sourceTree = "<group>"; };
+		4870B93B2099B3AA003FA601 /* IFTTTAlphaAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTAlphaAnimation.m; sourceTree = "<group>"; };
+		4870B93C2099B3AA003FA601 /* IFTTTConstraintsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTConstraintsAnimation.m; sourceTree = "<group>"; };
+		4870B93D2099B3AA003FA601 /* IFTTTFrameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTFrameAnimation.h; sourceTree = "<group>"; };
+		4870B93E2099B3AA003FA601 /* IFTTTTransform3DAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTTransform3DAnimation.h; sourceTree = "<group>"; };
+		4870B93F2099B3AA003FA601 /* IFTTTEasingFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTEasingFunction.m; sourceTree = "<group>"; };
+		4870B9402099B3AA003FA601 /* IFTTTCornerRadiusAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTCornerRadiusAnimation.h; sourceTree = "<group>"; };
+		4870B9412099B3AA003FA601 /* IFTTTAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTAnimator.h; sourceTree = "<group>"; };
+		4870B9422099B3AA003FA601 /* IFTTTAnimationKeyFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTAnimationKeyFrame.m; sourceTree = "<group>"; };
+		4870B9432099B3AA003FA601 /* IFTTTAngleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTAngleAnimation.h; sourceTree = "<group>"; };
+		4870B9442099B3AA003FA601 /* IFTTTHideAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTHideAnimation.m; sourceTree = "<group>"; };
+		4870B9452099B3AA003FA601 /* IFTTTAnimationFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTAnimationFrame.h; sourceTree = "<group>"; };
+		4870B9462099B3AA003FA601 /* IFTTTAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTAnimation.m; sourceTree = "<group>"; };
+		4870B9472099B3AA003FA601 /* IFTTTColorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTColorAnimation.h; sourceTree = "<group>"; };
+		4870B9482099B3AA003FA601 /* IFTTTScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTScaleAnimation.m; sourceTree = "<group>"; };
+		4870B9492099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTAnimatedScrollViewController.m; sourceTree = "<group>"; };
+		4870B94A2099B3AA003FA601 /* IFTTTEasingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTEasingFunction.h; sourceTree = "<group>"; };
+		4870B94B2099B3AA003FA601 /* IFTTTTransform3DAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTTransform3DAnimation.m; sourceTree = "<group>"; };
+		4870B94C2099B3AA003FA601 /* IFTTTFrameAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTFrameAnimation.m; sourceTree = "<group>"; };
+		4870B94D2099B3AA003FA601 /* IFTTTConstraintsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTConstraintsAnimation.h; sourceTree = "<group>"; };
+		4870B94E2099B3AA003FA601 /* IFTTTAlphaAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTAlphaAnimation.h; sourceTree = "<group>"; };
+		4870B94F2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTCornerRadiusAnimation.m; sourceTree = "<group>"; };
+		4870B9502099B3AA003FA601 /* IFTTTJazzHands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTJazzHands.h; sourceTree = "<group>"; };
+		4870B97E2099B578003FA601 /* ProjectStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectStyle.h; sourceTree = "<group>"; };
+		4870B97F2099B578003FA601 /* ProjectStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectStyle.m; sourceTree = "<group>"; };
+		4870B9832099B799003FA601 /* UIView+UIViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewUtils.m"; sourceTree = "<group>"; };
+		4870B9842099B799003FA601 /* UIView+UIViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewUtils.h"; sourceTree = "<group>"; };
+		4870B98E2099B7B1003FA601 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		4870B98F2099B7B1003FA601 /* UILabel+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Utils.m"; sourceTree = "<group>"; };
+		4870B9902099B7B1003FA601 /* UILabel+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Utils.h"; sourceTree = "<group>"; };
+		4870B9912099B7B1003FA601 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		4870B9922099B7B1003FA601 /* UIView+FrameAdjustments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FrameAdjustments.h"; path = "../../../../liquidpay/Liquid/Library/UIView+FrameAdjustments.h"; sourceTree = "<group>"; };
 		48837EB6209195920040BACB /* ObjC-iOS-TemplateQA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjC-iOS-TemplateQA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48837EB7209195920040BACB /* ObjC-iOS-Template copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjC-iOS-Template copy2-Info.plist"; path = "/Users/congnguyen/Github/ObjC-iOS-Template/ObjC-iOS-Template copy2-Info.plist"; sourceTree = "<absolute>"; };
 		48837ED2209195E40040BACB /* ObjC-iOS-TemplatePROD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjC-iOS-TemplatePROD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,7 +274,6 @@
 		48837EF8209196B70040BACB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		48837EF9209196C60040BACB /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		48837EFA209196C70040BACB /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		48837EFE209196DD0040BACB /* UIView+FrameAdjustments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAdjustments.h"; sourceTree = "<group>"; };
 		48837EFF209196DD0040BACB /* UIView+FrameAdjustments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAdjustments.m"; sourceTree = "<group>"; };
 		48837F04209197290040BACB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		48837F06209197650040BACB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -325,6 +421,7 @@
 		486CCD0220917B9F004A3AD6 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				4870B9312099B3AA003FA601 /* JazzHands */,
 				48C3A0D42093078000352FB4 /* LGSideMenuController */,
 				48C3A0882092F89800352FB4 /* MBProgressHUD.h */,
 				48C3A0872092F89800352FB4 /* MBProgressHUD.m */,
@@ -362,6 +459,7 @@
 				486CCD0F209182FB004A3AD6 /* RootControllers */,
 				486CCD0E209182D1004A3AD6 /* Login */,
 				486CCD0D209182CB004A3AD6 /* Registration */,
+				4870B92B2099B1E7003FA601 /* Splash */,
 				486CCD1A20918466004A3AD6 /* Home */,
 			);
 			path = Class;
@@ -393,8 +491,6 @@
 			children = (
 				486CCD112091837B004A3AD6 /* UnifiedTabBarViewController.h */,
 				486CCD122091837B004A3AD6 /* UnifiedTabBarViewController.m */,
-				486CCD142091840D004A3AD6 /* SplashViewController.h */,
-				486CCD152091840D004A3AD6 /* SplashViewController.m */,
 				486CCD1720918449004A3AD6 /* LeftSliderViewController.h */,
 				486CCD1820918449004A3AD6 /* LeftSliderViewController.m */,
 			);
@@ -421,6 +517,53 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		4870B92B2099B1E7003FA601 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				4870B92C2099B207003FA601 /* SplashViewController.h */,
+				4870B92D2099B207003FA601 /* SplashViewController.m */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		4870B9312099B3AA003FA601 /* JazzHands */ = {
+			isa = PBXGroup;
+			children = (
+				4870B9322099B3AA003FA601 /* IFTTTAnimationFrame.m */,
+				4870B9332099B3AA003FA601 /* IFTTTHideAnimation.h */,
+				4870B9342099B3AA003FA601 /* IFTTTAngleAnimation.m */,
+				4870B9352099B3AA003FA601 /* IFTTTAnimationKeyFrame.h */,
+				4870B9362099B3AA003FA601 /* IFTTTAnimator.m */,
+				4870B9372099B3AA003FA601 /* IFTTTAnimatedScrollViewController.h */,
+				4870B9382099B3AA003FA601 /* IFTTTScaleAnimation.h */,
+				4870B9392099B3AA003FA601 /* IFTTTColorAnimation.m */,
+				4870B93A2099B3AA003FA601 /* IFTTTAnimation.h */,
+				4870B93B2099B3AA003FA601 /* IFTTTAlphaAnimation.m */,
+				4870B93C2099B3AA003FA601 /* IFTTTConstraintsAnimation.m */,
+				4870B93D2099B3AA003FA601 /* IFTTTFrameAnimation.h */,
+				4870B93E2099B3AA003FA601 /* IFTTTTransform3DAnimation.h */,
+				4870B93F2099B3AA003FA601 /* IFTTTEasingFunction.m */,
+				4870B9402099B3AA003FA601 /* IFTTTCornerRadiusAnimation.h */,
+				4870B9412099B3AA003FA601 /* IFTTTAnimator.h */,
+				4870B9422099B3AA003FA601 /* IFTTTAnimationKeyFrame.m */,
+				4870B9432099B3AA003FA601 /* IFTTTAngleAnimation.h */,
+				4870B9442099B3AA003FA601 /* IFTTTHideAnimation.m */,
+				4870B9452099B3AA003FA601 /* IFTTTAnimationFrame.h */,
+				4870B9462099B3AA003FA601 /* IFTTTAnimation.m */,
+				4870B9472099B3AA003FA601 /* IFTTTColorAnimation.h */,
+				4870B9482099B3AA003FA601 /* IFTTTScaleAnimation.m */,
+				4870B9492099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m */,
+				4870B94A2099B3AA003FA601 /* IFTTTEasingFunction.h */,
+				4870B94B2099B3AA003FA601 /* IFTTTTransform3DAnimation.m */,
+				4870B94C2099B3AA003FA601 /* IFTTTFrameAnimation.m */,
+				4870B94D2099B3AA003FA601 /* IFTTTConstraintsAnimation.h */,
+				4870B94E2099B3AA003FA601 /* IFTTTAlphaAnimation.h */,
+				4870B94F2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m */,
+				4870B9502099B3AA003FA601 /* IFTTTJazzHands.h */,
+			);
+			path = JazzHands;
+			sourceTree = "<group>";
+		};
 		48837F03209197280040BACB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,8 +576,14 @@
 		48837F082091BBC50040BACB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				48837EFE209196DD0040BACB /* UIView+FrameAdjustments.h */,
+				4870B9902099B7B1003FA601 /* UILabel+Utils.h */,
+				4870B98F2099B7B1003FA601 /* UILabel+Utils.m */,
+				4870B9912099B7B1003FA601 /* UIView+Additions.h */,
+				4870B98E2099B7B1003FA601 /* UIView+Additions.m */,
+				4870B9922099B7B1003FA601 /* UIView+FrameAdjustments.h */,
 				48837EFF209196DD0040BACB /* UIView+FrameAdjustments.m */,
+				4870B9842099B799003FA601 /* UIView+UIViewUtils.h */,
+				4870B9832099B799003FA601 /* UIView+UIViewUtils.m */,
 				48837F092091BBE80040BACB /* UINavigationBar+FixedHeightWhenStatusBarHidden.h */,
 				48837F0A2091BBE80040BACB /* UINavigationBar+FixedHeightWhenStatusBarHidden.m */,
 				48837F0F2091BBFC0040BACB /* UIBarButtonItem+Badge.h */,
@@ -493,6 +642,8 @@
 				48837EF8209196B70040BACB /* PrefixHeader.pch */,
 				486CCD1E20918510004A3AD6 /* Helper.h */,
 				486CCD1F20918510004A3AD6 /* Helper.m */,
+				4870B97E2099B578003FA601 /* ProjectStyle.h */,
+				4870B97F2099B578003FA601 /* ProjectStyle.m */,
 				48837EF9209196C60040BACB /* Constants.h */,
 				48837EFA209196C70040BACB /* Constants.m */,
 				48837F7B2091C1210040BACB /* LocaleString.h */,
@@ -669,35 +820,52 @@
 			files = (
 				48837F4B2091BC9B0040BACB /* SDWebImageDecoder.m in Sources */,
 				48837F0B2091BBE80040BACB /* UINavigationBar+FixedHeightWhenStatusBarHidden.m in Sources */,
+				4870B97B2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m in Sources */,
 				48837F1C2091BC740040BACB /* NSString+TextDirectionality.m in Sources */,
 				486CCD1920918449004A3AD6 /* LeftSliderViewController.m in Sources */,
-				486CCD162091840D004A3AD6 /* SplashViewController.m in Sources */,
 				48837F712091BD020040BACB /* BaseNavigationController.m in Sources */,
+				4870B9542099B3AA003FA601 /* IFTTTAngleAnimation.m in Sources */,
 				486CCCF7209179FE004A3AD6 /* main.m in Sources */,
 				48C3A0EF2093078100352FB4 /* LGSideMenuGesturesHandler.m in Sources */,
 				48837F602091BC9B0040BACB /* SDImageCache.m in Sources */,
 				48837F932091CCA50040BACB /* KSReachability.m in Sources */,
+				4870B9962099B7B1003FA601 /* UIView+Additions.m in Sources */,
 				48837F982091CCFB0040BACB /* Reachability.m in Sources */,
+				4870B96C2099B3AA003FA601 /* IFTTTAnimation.m in Sources */,
 				48837F632091BC9B0040BACB /* SDWebImageDownloaderOperation.m in Sources */,
 				48C3A0F52093078100352FB4 /* LGSideMenuBorderView.m in Sources */,
 				486CCD2020918510004A3AD6 /* Helper.m in Sources */,
+				4870B9572099B3AA003FA601 /* IFTTTAnimator.m in Sources */,
 				48837F1F2091BC740040BACB /* NSString+Color.m in Sources */,
 				486CCD0C20918069004A3AD6 /* Utility.m in Sources */,
 				48837F152091BC420040BACB /* UIButton+Badge.m in Sources */,
 				486CCD1D20918488004A3AD6 /* HomeViewController.m in Sources */,
 				48837F8C2091C8FF0040BACB /* UYLPasswordManager.m in Sources */,
+				4870B9632099B3AA003FA601 /* IFTTTEasingFunction.m in Sources */,
+				4870B96F2099B3AA003FA601 /* IFTTTScaleAnimation.m in Sources */,
 				48837F692091BC9B0040BACB /* UIImageView+WebCache.m in Sources */,
+				4870B9802099B578003FA601 /* ProjectStyle.m in Sources */,
 				48837F6C2091BC9B0040BACB /* UIButton+WebCache.m in Sources */,
+				4870B9722099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m in Sources */,
 				48837F512091BC9B0040BACB /* SDWebImageDownloader.m in Sources */,
+				4870B9782099B3AA003FA601 /* IFTTTFrameAnimation.m in Sources */,
+				4870B9752099B3AA003FA601 /* IFTTTTransform3DAnimation.m in Sources */,
+				4870B9692099B3AA003FA601 /* IFTTTHideAnimation.m in Sources */,
+				4870B95D2099B3AA003FA601 /* IFTTTAlphaAnimation.m in Sources */,
 				48837F542091BC9B0040BACB /* UIImage+GIF.m in Sources */,
+				4870B9992099B7B1003FA601 /* UILabel+Utils.m in Sources */,
+				4870B9512099B3AA003FA601 /* IFTTTAnimationFrame.m in Sources */,
+				4870B95A2099B3AA003FA601 /* IFTTTColorAnimation.m in Sources */,
 				48C3A0E62093078100352FB4 /* LGSideMenuView.m in Sources */,
 				48837F422091BC9B0040BACB /* UIImage+WebP.m in Sources */,
 				486CCD5D20919480004A3AD6 /* AppDelegate.m in Sources */,
+				4870B9602099B3AA003FA601 /* IFTTTConstraintsAnimation.m in Sources */,
 				48837EFB209196C70040BACB /* Constants.m in Sources */,
 				48C3A0E92093078100352FB4 /* LGSideMenuSegue.m in Sources */,
 				48C3A0EC2093078100352FB4 /* LGSideMenuController.m in Sources */,
 				48837F762091BFAB0040BACB /* BaseViewController.m in Sources */,
 				48837F5D2091BC9B0040BACB /* SDWebImagePrefetcher.m in Sources */,
+				4870B9662099B3AA003FA601 /* IFTTTAnimationKeyFrame.m in Sources */,
 				486CCD132091837B004A3AD6 /* UnifiedTabBarViewController.m in Sources */,
 				48C3A0892092F89800352FB4 /* MBProgressHUD.m in Sources */,
 				48837F4E2091BC9B0040BACB /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -706,8 +874,10 @@
 				48837F572091BC9B0040BACB /* UIImage+MultiFormat.m in Sources */,
 				48C3A0E32093078100352FB4 /* LGSideMenuHelper.m in Sources */,
 				48837F452091BC9B0040BACB /* MKAnnotationView+WebCache.m in Sources */,
+				4870B92E2099B207003FA601 /* SplashViewController.m in Sources */,
 				48837F102091BBFC0040BACB /* UIBarButtonItem+Badge.m in Sources */,
 				48837F5A2091BC9B0040BACB /* SDWebImageCompat.m in Sources */,
+				4870B9852099B799003FA601 /* UIView+UIViewUtils.m in Sources */,
 				48837F00209196DD0040BACB /* UIView+FrameAdjustments.m in Sources */,
 				48C3A0F22093078100352FB4 /* UIViewController+LGSideMenuController.m in Sources */,
 			);
@@ -719,35 +889,52 @@
 			files = (
 				48837F4C2091BC9B0040BACB /* SDWebImageDecoder.m in Sources */,
 				48837F0C2091BBE80040BACB /* UINavigationBar+FixedHeightWhenStatusBarHidden.m in Sources */,
+				4870B97C2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m in Sources */,
 				48837F1D2091BC740040BACB /* NSString+TextDirectionality.m in Sources */,
 				48837E9E209195920040BACB /* LeftSliderViewController.m in Sources */,
-				48837EA1209195920040BACB /* SplashViewController.m in Sources */,
 				48837F722091BD020040BACB /* BaseNavigationController.m in Sources */,
+				4870B9552099B3AA003FA601 /* IFTTTAngleAnimation.m in Sources */,
 				48837EA4209195920040BACB /* main.m in Sources */,
 				48C3A0F02093078100352FB4 /* LGSideMenuGesturesHandler.m in Sources */,
 				48837F612091BC9B0040BACB /* SDImageCache.m in Sources */,
 				48837F942091CCA50040BACB /* KSReachability.m in Sources */,
+				4870B9972099B7B1003FA601 /* UIView+Additions.m in Sources */,
 				48837F992091CCFB0040BACB /* Reachability.m in Sources */,
+				4870B96D2099B3AA003FA601 /* IFTTTAnimation.m in Sources */,
 				48837F642091BC9B0040BACB /* SDWebImageDownloaderOperation.m in Sources */,
 				48C3A0F62093078100352FB4 /* LGSideMenuBorderView.m in Sources */,
 				48837EA5209195920040BACB /* Helper.m in Sources */,
+				4870B9582099B3AA003FA601 /* IFTTTAnimator.m in Sources */,
 				48837F202091BC740040BACB /* NSString+Color.m in Sources */,
 				48837EA8209195920040BACB /* Utility.m in Sources */,
 				48837F162091BC420040BACB /* UIButton+Badge.m in Sources */,
 				48837EA9209195920040BACB /* HomeViewController.m in Sources */,
 				48837F8D2091C8FF0040BACB /* UYLPasswordManager.m in Sources */,
+				4870B9642099B3AA003FA601 /* IFTTTEasingFunction.m in Sources */,
+				4870B9702099B3AA003FA601 /* IFTTTScaleAnimation.m in Sources */,
 				48837F6A2091BC9B0040BACB /* UIImageView+WebCache.m in Sources */,
+				4870B9812099B578003FA601 /* ProjectStyle.m in Sources */,
 				48837F6D2091BC9B0040BACB /* UIButton+WebCache.m in Sources */,
+				4870B9732099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m in Sources */,
 				48837F522091BC9B0040BACB /* SDWebImageDownloader.m in Sources */,
+				4870B9792099B3AA003FA601 /* IFTTTFrameAnimation.m in Sources */,
+				4870B9762099B3AA003FA601 /* IFTTTTransform3DAnimation.m in Sources */,
+				4870B96A2099B3AA003FA601 /* IFTTTHideAnimation.m in Sources */,
+				4870B95E2099B3AA003FA601 /* IFTTTAlphaAnimation.m in Sources */,
 				48837F552091BC9B0040BACB /* UIImage+GIF.m in Sources */,
+				4870B99A2099B7B1003FA601 /* UILabel+Utils.m in Sources */,
+				4870B9522099B3AA003FA601 /* IFTTTAnimationFrame.m in Sources */,
+				4870B95B2099B3AA003FA601 /* IFTTTColorAnimation.m in Sources */,
 				48C3A0E72093078100352FB4 /* LGSideMenuView.m in Sources */,
 				48837F432091BC9B0040BACB /* UIImage+WebP.m in Sources */,
 				48837EAC209195920040BACB /* AppDelegate.m in Sources */,
+				4870B9612099B3AA003FA601 /* IFTTTConstraintsAnimation.m in Sources */,
 				48837EFC209196C70040BACB /* Constants.m in Sources */,
 				48C3A0EA2093078100352FB4 /* LGSideMenuSegue.m in Sources */,
 				48C3A0ED2093078100352FB4 /* LGSideMenuController.m in Sources */,
 				48837F772091BFAB0040BACB /* BaseViewController.m in Sources */,
 				48837F5E2091BC9B0040BACB /* SDWebImagePrefetcher.m in Sources */,
+				4870B9672099B3AA003FA601 /* IFTTTAnimationKeyFrame.m in Sources */,
 				48837EAD209195920040BACB /* UnifiedTabBarViewController.m in Sources */,
 				48C3A08A2092F89800352FB4 /* MBProgressHUD.m in Sources */,
 				48837F4F2091BC9B0040BACB /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -756,8 +943,10 @@
 				48837F582091BC9B0040BACB /* UIImage+MultiFormat.m in Sources */,
 				48C3A0E42093078100352FB4 /* LGSideMenuHelper.m in Sources */,
 				48837F462091BC9B0040BACB /* MKAnnotationView+WebCache.m in Sources */,
+				4870B92F2099B207003FA601 /* SplashViewController.m in Sources */,
 				48837F112091BBFC0040BACB /* UIBarButtonItem+Badge.m in Sources */,
 				48837F5B2091BC9B0040BACB /* SDWebImageCompat.m in Sources */,
+				4870B9862099B799003FA601 /* UIView+UIViewUtils.m in Sources */,
 				48837F01209196DD0040BACB /* UIView+FrameAdjustments.m in Sources */,
 				48C3A0F32093078100352FB4 /* UIViewController+LGSideMenuController.m in Sources */,
 			);
@@ -769,35 +958,52 @@
 			files = (
 				48837F4D2091BC9B0040BACB /* SDWebImageDecoder.m in Sources */,
 				48837F0D2091BBE80040BACB /* UINavigationBar+FixedHeightWhenStatusBarHidden.m in Sources */,
+				4870B97D2099B3AA003FA601 /* IFTTTCornerRadiusAnimation.m in Sources */,
 				48837F1E2091BC740040BACB /* NSString+TextDirectionality.m in Sources */,
 				48837EBA209195E40040BACB /* LeftSliderViewController.m in Sources */,
-				48837EBD209195E40040BACB /* SplashViewController.m in Sources */,
 				48837F732091BD020040BACB /* BaseNavigationController.m in Sources */,
+				4870B9562099B3AA003FA601 /* IFTTTAngleAnimation.m in Sources */,
 				48837EC0209195E40040BACB /* main.m in Sources */,
 				48C3A0F12093078100352FB4 /* LGSideMenuGesturesHandler.m in Sources */,
 				48837F622091BC9B0040BACB /* SDImageCache.m in Sources */,
 				48837F952091CCA50040BACB /* KSReachability.m in Sources */,
+				4870B9982099B7B1003FA601 /* UIView+Additions.m in Sources */,
 				48837F9A2091CCFB0040BACB /* Reachability.m in Sources */,
+				4870B96E2099B3AA003FA601 /* IFTTTAnimation.m in Sources */,
 				48837F652091BC9B0040BACB /* SDWebImageDownloaderOperation.m in Sources */,
 				48C3A0F72093078100352FB4 /* LGSideMenuBorderView.m in Sources */,
 				48837EC1209195E40040BACB /* Helper.m in Sources */,
+				4870B9592099B3AA003FA601 /* IFTTTAnimator.m in Sources */,
 				48837F212091BC740040BACB /* NSString+Color.m in Sources */,
 				48837EC4209195E40040BACB /* Utility.m in Sources */,
 				48837F172091BC420040BACB /* UIButton+Badge.m in Sources */,
 				48837EC5209195E40040BACB /* HomeViewController.m in Sources */,
 				48837F8E2091C8FF0040BACB /* UYLPasswordManager.m in Sources */,
+				4870B9652099B3AA003FA601 /* IFTTTEasingFunction.m in Sources */,
+				4870B9712099B3AA003FA601 /* IFTTTScaleAnimation.m in Sources */,
 				48837F6B2091BC9B0040BACB /* UIImageView+WebCache.m in Sources */,
+				4870B9822099B578003FA601 /* ProjectStyle.m in Sources */,
 				48837F6E2091BC9B0040BACB /* UIButton+WebCache.m in Sources */,
+				4870B9742099B3AA003FA601 /* IFTTTAnimatedScrollViewController.m in Sources */,
 				48837F532091BC9B0040BACB /* SDWebImageDownloader.m in Sources */,
+				4870B97A2099B3AA003FA601 /* IFTTTFrameAnimation.m in Sources */,
+				4870B9772099B3AA003FA601 /* IFTTTTransform3DAnimation.m in Sources */,
+				4870B96B2099B3AA003FA601 /* IFTTTHideAnimation.m in Sources */,
+				4870B95F2099B3AA003FA601 /* IFTTTAlphaAnimation.m in Sources */,
 				48837F562091BC9B0040BACB /* UIImage+GIF.m in Sources */,
+				4870B99B2099B7B1003FA601 /* UILabel+Utils.m in Sources */,
+				4870B9532099B3AA003FA601 /* IFTTTAnimationFrame.m in Sources */,
+				4870B95C2099B3AA003FA601 /* IFTTTColorAnimation.m in Sources */,
 				48C3A0E82093078100352FB4 /* LGSideMenuView.m in Sources */,
 				48837F442091BC9B0040BACB /* UIImage+WebP.m in Sources */,
 				48837EC8209195E40040BACB /* AppDelegate.m in Sources */,
+				4870B9622099B3AA003FA601 /* IFTTTConstraintsAnimation.m in Sources */,
 				48837EFD209196C70040BACB /* Constants.m in Sources */,
 				48C3A0EB2093078100352FB4 /* LGSideMenuSegue.m in Sources */,
 				48C3A0EE2093078100352FB4 /* LGSideMenuController.m in Sources */,
 				48837F782091BFAB0040BACB /* BaseViewController.m in Sources */,
 				48837F5F2091BC9B0040BACB /* SDWebImagePrefetcher.m in Sources */,
+				4870B9682099B3AA003FA601 /* IFTTTAnimationKeyFrame.m in Sources */,
 				48837EC9209195E40040BACB /* UnifiedTabBarViewController.m in Sources */,
 				48C3A08B2092F89800352FB4 /* MBProgressHUD.m in Sources */,
 				48837F502091BC9B0040BACB /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -806,8 +1012,10 @@
 				48837F592091BC9B0040BACB /* UIImage+MultiFormat.m in Sources */,
 				48C3A0E52093078100352FB4 /* LGSideMenuHelper.m in Sources */,
 				48837F472091BC9B0040BACB /* MKAnnotationView+WebCache.m in Sources */,
+				4870B9302099B207003FA601 /* SplashViewController.m in Sources */,
 				48837F122091BBFC0040BACB /* UIBarButtonItem+Badge.m in Sources */,
 				48837F5C2091BC9B0040BACB /* SDWebImageCompat.m in Sources */,
+				4870B9872099B799003FA601 /* UIView+UIViewUtils.m in Sources */,
 				48837F02209196DD0040BACB /* UIView+FrameAdjustments.m in Sources */,
 				48C3A0F42093078100352FB4 /* UIViewController+LGSideMenuController.m in Sources */,
 			);

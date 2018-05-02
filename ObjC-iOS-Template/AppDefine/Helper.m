@@ -10,9 +10,6 @@
 
 @implementation Helper
 +(BOOL)isCheckAuthentication{
-    return YES;
-}
-+(NSString *)localizedString:(NSString *) str{
-    return NSLocalizedString(str,nil);
+    return NO;
 }
 @end

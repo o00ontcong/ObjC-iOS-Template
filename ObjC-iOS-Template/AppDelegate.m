@@ -10,6 +10,7 @@
 #import "UnifiedTabBarViewController.h"
 #import "LeftSliderViewController.h"
 #import "LGSideMenuController.h"
+#import "SplashViewController.h"
 @interface AppDelegate ()
 @property (strong, nonatomic) LeftSliderViewController *leftVC;
 
@@ -59,7 +60,12 @@
         
 
     } else {
+        [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+        [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
         
+        self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[SplashViewController alloc] init]];
     }
+    [UIApplication sharedApplication].keyWindow.backgroundColor = HEADER_BAR;
+
 }
 @end

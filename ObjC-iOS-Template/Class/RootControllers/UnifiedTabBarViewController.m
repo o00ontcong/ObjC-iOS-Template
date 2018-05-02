@@ -37,28 +37,28 @@
     
     // Configure Wallet
     BaseNavigationController *vcWallet = [[BaseNavigationController alloc] initWithRootViewController:[[HomeViewController alloc]init]];
-    vcWallet.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"title_wallet",nil) image:[UIImage imageNamed:@"tapbar_wallet_icon_inactive"] tag:1];
+    vcWallet.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(TAB_BAR_ITEM, nil) image:[UIImage imageNamed:@"tapbar_wallet_icon_inactive"] tag:1];
     vcWallet.tabBarItem.image = [[UIImage imageNamed:@"tapbar_wallet_icon_inactive"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vcWallet.tabBarItem.selectedImage = [[UIImage imageNamed:@"tapbar_wallet_icon_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     
     
     //Configure Payment tab
     BaseNavigationController *vcPayment = [[BaseNavigationController alloc] initWithRootViewController:[[HomeViewController alloc]init]];
-    vcPayment.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"title_pay_cap",nil) image:[UIImage imageNamed:@"nPAY_inactive"] tag:3];
+    vcPayment.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(TAB_BAR_ITEM,nil) image:[UIImage imageNamed:@"nPAY_inactive"] tag:3];
     vcPayment.tabBarItem.image = [[UIImage imageNamed:@"nPAY_inactive"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vcPayment.tabBarItem.selectedImage = [[UIImage imageNamed:@"nPAY_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     
     //Configure Home Tab
     BaseNavigationController *vcProfile = [[BaseNavigationController alloc] initWithRootViewController:[[HomeViewController alloc]init]];
-    vcProfile.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"title_profile",nil) image:[UIImage imageNamed:@"Profile_icon"] tag:2];
+    vcProfile.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(TAB_BAR_ITEM,nil) image:[UIImage imageNamed:@"Profile_icon"] tag:2];
     vcProfile.tabBarItem.image = [[UIImage imageNamed:@"Profile_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vcProfile.tabBarItem.selectedImage = [[UIImage imageNamed:@"Profile_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     
     
     //configure Discount Tab
     BaseNavigationController *vcDiscount = [[BaseNavigationController alloc] initWithRootViewController:[[HomeViewController alloc]init]];
-    vcDiscount.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"title_discount",nil) image:[UIImage imageNamed:@"tapbar_history_icon_inactive"] tag:5];
+    vcDiscount.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(TAB_BAR_ITEM,nil) image:[UIImage imageNamed:@"tapbar_history_icon_inactive"] tag:5];
     vcDiscount.tabBarItem.image = [[UIImage imageNamed:@"iconMainMenuDiscount"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vcDiscount.tabBarItem.selectedImage =[[UIImage imageNamed:@"iconMainMenuDiscountSelected"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     
@@ -66,14 +66,14 @@
     
     //Configure History Tab
     BaseNavigationController *vcHistory = [[BaseNavigationController alloc] initWithRootViewController:[[HomeViewController alloc]init]];
-    vcHistory.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"title_history",nil) image:[UIImage imageNamed:@"tapbar_history_icon_inactive"] tag:6];
+    vcHistory.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(TAB_BAR_ITEM,nil) image:[UIImage imageNamed:@"tapbar_history_icon_inactive"] tag:6];
     vcHistory.tabBarItem.image = [[UIImage imageNamed:@"tapbar_history_icon_inactive"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vcHistory.tabBarItem.selectedImage =[[UIImage imageNamed:@"tapbar_history_icon_active"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     
     
     //Configuring Shop tab
     BaseNavigationController *vcShop = [[BaseNavigationController alloc] initWithRootViewController:[[HomeViewController alloc]init]];
-    vcShop.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"title_shop",nil) image:[UIImage imageNamed:@"Shop-Navigation"] tag:4];
+    vcShop.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(TAB_BAR_ITEM,nil) image:[UIImage imageNamed:@"Shop-Navigation"] tag:4];
     vcShop.tabBarItem.image = [[UIImage imageNamed:@"Shop-Navigation"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vcShop.tabBarItem.selectedImage =[[UIImage imageNamed:@"Shop-Navigation-active"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     

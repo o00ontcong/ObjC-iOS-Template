@@ -254,6 +254,7 @@ typedef NS_OPTIONS(NSInteger, ComfortViewType) {
 #define TEXTFIELD_BG_COLOR [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0]
 #define BUTTON_BG [UIColor colorWithRed:19.0/255.0 green:201.0/255.0 blue:254.0/255.0 alpha:1.0]
 #define TEXT_COLOR [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]
+#define SUB_MEDIUM_TEXT_COLOR [UIColor colorWithRed:161.0/255.0 green:161.0/255.0 blue:161.0/255.0 alpha:1.0]
 
 //textfield sizes for different devices
 #define DEFAULT_TEXTFIELD_SIZE DEFAULT_TEXTFIELD_SIZE_6P

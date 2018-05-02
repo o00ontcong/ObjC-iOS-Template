@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeftSliderViewController : UIViewController
+@interface LeftSliderViewController : BaseViewController
 
 @end
