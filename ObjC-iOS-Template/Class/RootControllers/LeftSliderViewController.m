@@ -74,7 +74,6 @@
     [menuListTableView setSeparatorInset:UIEdgeInsetsMake(0.0, -3.0, 0.0, 0.0)];
     [menuListTableView setSeparatorColor:SIDE_MENU_TABLE_VIEW_SEPERATOR_COLOR];
     [menuListTableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-    menuListTableView.allowsSelection = NO;
     [view addSubview:menuListTableView];
     
     menuListTableView.scrollEnabled = NO;
@@ -113,14 +112,16 @@
     cell.textLabel.text = [listOptions objectAtIndex:indexPath.row];
     cell.textLabel.textColor = HEADER_BAR_TEXT_COLOR;
     [cell setBackgroundColor:[UIColor clearColor]];
-   
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
     return cell;
 }
 #pragma mark - UITableView Delegates
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *optionTitle =  [listOptions objectAtIndex:indexPath.row];
     if ([optionTitle isEqualToString:MENU_OPTION_4]){
-        
+        [Utility deleteKey:PROJECT_SESSIONKEY];
+        [Helper authenticationChange];
     }
 }
 

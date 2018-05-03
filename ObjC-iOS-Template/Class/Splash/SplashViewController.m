@@ -7,7 +7,7 @@
 //
 
 #import "SplashViewController.h"
-
+#import "LoginViewController.h"
 @interface SplashViewController (){
     UIButton *btnSkip, *btnRegister, *btnLogin;
 }
@@ -275,7 +275,7 @@
         
     }
     else if(sender == btnLogin){
-//        [self.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
+        [self.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
         
     }
     

@@ -35,7 +35,7 @@
     sideMargins = 20.0;
     fieldWidth = self.view.width - (sideMargins * 2.0);
     
-    customBackButton =  [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"arrow_back"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] style:UIBarButtonItemStylePlain target:self action:@selector(goBackButton:)];
+    customBackButton =  [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"fs_voucher_left_arrow"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] style:UIBarButtonItemStylePlain target:self action:@selector(goBackButton:)];
     
     [self addBackgroundView];
     [self willConfigureView];

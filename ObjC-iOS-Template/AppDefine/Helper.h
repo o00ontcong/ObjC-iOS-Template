@@ -10,4 +10,8 @@
 
 @interface Helper : NSObject
 +(BOOL)isCheckAuthentication;
++(UITextField *) CustomizedTextFieldWithFrame:(CGRect)frame andPlaceholderTextName:(NSString *)name;
++(UIButton *)getThemedBlueButtonWithTitleForNormalState:(NSString *)title
+                                               andFrame:(CGRect)frame;
++(void)authenticationChange;
 @end

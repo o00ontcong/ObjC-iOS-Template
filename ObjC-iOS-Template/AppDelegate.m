@@ -22,6 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self registerNotification];
     [self checkUserAuthentication];
     [self.window makeKeyAndVisible];
 
@@ -43,7 +44,15 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 }
+-(void)registerNotification
+{
+    
+    UIUserNotificationSettings* notificationSettings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkUserAuthentication) name:AUTHENTICATION_CHANGE object:nil];
 
+}
 -(void)checkUserAuthentication{
     if ([Helper isCheckAuthentication]){
         self.window.rootViewController = nil;

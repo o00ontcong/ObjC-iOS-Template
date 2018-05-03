@@ -38,6 +38,8 @@ alpha:1.0]
 #define FOOTER_UNSELECTED [UIColor colorWithRed:109.0/255.0 green:109.0/255.0 blue:109.0/255.0 alpha:1.0]
 #define FOOTER_SELECTED HEADER_BAR
 
+#define PROJECT_SESSIONKEY @"PROJECT_SESSIONKEY"
+#define AUTHENTICATION_CHANGE @"AUTHENTICATIONCHANGE"
 @interface Constants : NSObject
 
 @end

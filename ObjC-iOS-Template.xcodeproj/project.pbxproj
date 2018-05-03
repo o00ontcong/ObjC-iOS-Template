@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48641810209AA9FC009BAEAC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4864180F209AA9FC009BAEAC /* LoginViewController.m */; };
+		48641811209AA9FC009BAEAC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4864180F209AA9FC009BAEAC /* LoginViewController.m */; };
+		48641812209AA9FC009BAEAC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4864180F209AA9FC009BAEAC /* LoginViewController.m */; };
 		486CCCF1209179FE004A3AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486CCCF0209179FE004A3AD6 /* Assets.xcassets */; };
 		486CCCF7209179FE004A3AD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CCCF6209179FE004A3AD6 /* main.m */; };
 		486CCD0120917B87004A3AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486CCD0020917B87004A3AD6 /* LaunchScreen.storyboard */; };
@@ -207,6 +210,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4864180E209AA9FC009BAEAC /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4864180F209AA9FC009BAEAC /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		486CCCE4209179FE004A3AD6 /* ObjC-iOS-TemplateDEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjC-iOS-TemplateDEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		486CCCF0209179FE004A3AD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		486CCCF5209179FE004A3AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -482,6 +487,8 @@
 		486CCD0E209182D1004A3AD6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4864180E209AA9FC009BAEAC /* LoginViewController.h */,
+				4864180F209AA9FC009BAEAC /* LoginViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -850,6 +857,7 @@
 				48837F512091BC9B0040BACB /* SDWebImageDownloader.m in Sources */,
 				4870B9782099B3AA003FA601 /* IFTTTFrameAnimation.m in Sources */,
 				4870B9752099B3AA003FA601 /* IFTTTTransform3DAnimation.m in Sources */,
+				48641810209AA9FC009BAEAC /* LoginViewController.m in Sources */,
 				4870B9692099B3AA003FA601 /* IFTTTHideAnimation.m in Sources */,
 				4870B95D2099B3AA003FA601 /* IFTTTAlphaAnimation.m in Sources */,
 				48837F542091BC9B0040BACB /* UIImage+GIF.m in Sources */,
@@ -919,6 +927,7 @@
 				48837F522091BC9B0040BACB /* SDWebImageDownloader.m in Sources */,
 				4870B9792099B3AA003FA601 /* IFTTTFrameAnimation.m in Sources */,
 				4870B9762099B3AA003FA601 /* IFTTTTransform3DAnimation.m in Sources */,
+				48641811209AA9FC009BAEAC /* LoginViewController.m in Sources */,
 				4870B96A2099B3AA003FA601 /* IFTTTHideAnimation.m in Sources */,
 				4870B95E2099B3AA003FA601 /* IFTTTAlphaAnimation.m in Sources */,
 				48837F552091BC9B0040BACB /* UIImage+GIF.m in Sources */,
@@ -988,6 +997,7 @@
 				48837F532091BC9B0040BACB /* SDWebImageDownloader.m in Sources */,
 				4870B97A2099B3AA003FA601 /* IFTTTFrameAnimation.m in Sources */,
 				4870B9772099B3AA003FA601 /* IFTTTTransform3DAnimation.m in Sources */,
+				48641812209AA9FC009BAEAC /* LoginViewController.m in Sources */,
 				4870B96B2099B3AA003FA601 /* IFTTTHideAnimation.m in Sources */,
 				4870B95F2099B3AA003FA601 /* IFTTTAlphaAnimation.m in Sources */,
 				48837F562091BC9B0040BACB /* UIImage+GIF.m in Sources */,
