@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "APIManager.h"
 @interface Helper : NSObject
 +(BOOL)isCheckAuthentication;
 +(UITextField *) CustomizedTextFieldWithFrame:(CGRect)frame andPlaceholderTextName:(NSString *)name;

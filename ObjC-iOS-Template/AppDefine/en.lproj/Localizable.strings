@@ -35,3 +35,5 @@
 "btn_yes" = "Yes";
 "btn_no" = "No";
 "btn_skip_and_continue" = "Skip and Continue";
+"error_internet_connectivity" = "Please check your Internet connectivity.";
+"error_phone_settings" = "Please check your phone settings and try again.";

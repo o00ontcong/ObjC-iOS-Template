@@ -1184,14 +1184,14 @@
     return isUpdated;
 }
 
-+(NSMutableArray *)sortArray:(NSMutableArray *)array withKey:(NSString *)keyName andSortingType:(LiquidPaySortStyle)sortStyle andAscending:(BOOL)isAscending{
++(NSMutableArray *)sortArray:(NSMutableArray *)array withKey:(NSString *)keyName andSortingType:(ProjectSortStyle)sortStyle andAscending:(BOOL)isAscending{
     
     NSSortDescriptor *aSortDescriptor;
-    if(sortStyle == LiquidPaySortStyleString){
+    if(sortStyle == ProjectSortStyleString){
         
         aSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:keyName ascending:isAscending selector:@selector(caseInsensitiveCompare:)];
         
-    }else if (sortStyle == LiquidPaySortStyleNumber){
+    }else if (sortStyle == ProjectSortStyleNumber){
         
         aSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:keyName ascending:isAscending comparator:^(id obj1, id obj2) {
             
@@ -1204,7 +1204,7 @@
             return (NSComparisonResult)NSOrderedSame;
         }];
         
-    }else if(sortStyle == LiquidPaySortStyleFloat){
+    }else if(sortStyle == ProjectSortStyleFloat){
         
         aSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:keyName ascending:isAscending comparator:^(id obj1, id obj2) {
             
@@ -1514,7 +1514,7 @@
 
 
 
-+(double)getDiscountedTwoDecimalAmount:(double)oriAmount andDiscounts:(double)percentage roundType:(LiquidPayRoundType)roundType
++(double)getDiscountedTwoDecimalAmount:(double)oriAmount andDiscounts:(double)percentage roundType:(ProjectRoundType)roundType
 {
     double amtTwoDecimal = 0.0;
     
@@ -1522,13 +1522,13 @@
     {
         amtTwoDecimal = oriAmount*percentage;
         
-        if(roundType == LiquidPayRoundTypeActual || roundType == LiquidPayRoundTypeRoundDown)
+        if(roundType == ProjectRoundTypeActual || roundType == ProjectRoundTypeRoundDown)
         {
             //            amtTwoDecimal = floor(amtTwoDecimal); // no round up/down, just return the 2 decimal point digits
             amtTwoDecimal = amtTwoDecimal/100;
             amtTwoDecimal = [Utility getAmtDoubleFromString:[NSString stringWithFormat:@"%.2f", amtTwoDecimal]];
         }
-        else //roundType == LiquidPayRoundTypeRoundUp
+        else //roundType == ProjectRoundTypeRoundUp
         {
             amtTwoDecimal = round(amtTwoDecimal);
             amtTwoDecimal = amtTwoDecimal/100;

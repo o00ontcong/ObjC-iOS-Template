@@ -25,18 +25,18 @@
 #define TIMEOUTINTERVAL30 30.0f
 #define SESSIONTIMEOUTINTERVAL30 1800.0f
 
-typedef NS_OPTIONS(NSUInteger, LiquidPaySortStyle) {
-    LiquidPaySortStyleString = 1 <<  0,
-    LiquidPaySortStyleNumber = 1 <<  1,
-    LiquidPaySortStyleFloat = 1 <<  2
-    
+typedef NS_OPTIONS(NSUInteger, ProjectSortStyle) {
+    ProjectSortStyleString = 1 << 0,
+    ProjectSortStyleNumber = 1 << 1,
+    ProjectSortStyleFloat = 1 << 2
+
 };
 
-typedef NS_OPTIONS(NSUInteger, LiquidPayRoundType) {
-    LiquidPayRoundTypeActual = 1 <<  0,
-    LiquidPayRoundTypeRoundUp = 1 <<  1,
-    LiquidPayRoundTypeRoundDown = 1 <<  2
-    
+typedef NS_OPTIONS(NSUInteger, ProjectRoundType) {
+    ProjectRoundTypeActual = 1 << 0,
+    ProjectRoundTypeRoundUp = 1 << 1,
+    ProjectRoundTypeRoundDown = 1 << 2
+
 };
 
 typedef NS_OPTIONS(NSInteger, ComfortViewType) {
@@ -49,133 +49,131 @@ typedef NS_OPTIONS(NSInteger, ComfortViewType) {
 
 @interface Utility : NSObject
 
-+(UIFont *)primaryFont:(float)_size;
-+(UIFont *)primaryFontBold:(float)_size;
-+(UIFont *)fontCalibri:(float)_size;
-+(UIFont *)fontStyleBold:(float)_size;
-+(UIFont *)fontHelveticaNeue:(float)_size;
-+(UIFont *)fontHelveticaNeueLight:(float)_size;
-+(UIFont *)fontHelveticaNeueBold:(float)_size;
-+(UIFont *)fontHelveticaNeueThin:(float)_size;
-+(UIFont *)fontHelveticaNeueThinItalic:(float)_size;
-+(UIFont *)fontHelveticaNeueMedium:(float)_size;
-+(UIFont *)fontHelveticaNeueSemibold:(float)_size;
++ (UIFont*)primaryFont:(float)_size;
++ (UIFont*)primaryFontBold:(float)_size;
++ (UIFont*)fontCalibri:(float)_size;
++ (UIFont*)fontStyleBold:(float)_size;
++ (UIFont*)fontHelveticaNeue:(float)_size;
++ (UIFont*)fontHelveticaNeueLight:(float)_size;
++ (UIFont*)fontHelveticaNeueBold:(float)_size;
++ (UIFont*)fontHelveticaNeueThin:(float)_size;
++ (UIFont*)fontHelveticaNeueThinItalic:(float)_size;
++ (UIFont*)fontHelveticaNeueMedium:(float)_size;
++ (UIFont*)fontHelveticaNeueSemibold:(float)_size;
 
 + (UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize;
-+(char)convertToChar:(BOOL)boolean;
-+(void)alert:(NSString *)title setMessage:(NSString *)message;
-+(void)alert:(NSString *)title setMessage:(NSString *)message cancenButtonTitle:(NSString *)cancelTitle;
-+(BOOL)checkAuthentication;
-+(BOOL)registerKey:(NSString *)identifier withValue:(NSString *)value;
-+(BOOL)checkKeyIdentifier:(NSString *)identifier;
-+(BOOL)deleteKey:(NSString *)identifier;
-+(NSString *)getKeyValue:(NSString *)identifier;
++ (char)convertToChar:(BOOL)boolean;
++ (void)alert:(NSString*)title setMessage:(NSString*)message;
++ (void)alert:(NSString*)title setMessage:(NSString*)message cancenButtonTitle:(NSString*)cancelTitle;
++ (BOOL)checkAuthentication;
++ (BOOL)registerKey:(NSString*)identifier withValue:(NSString*)value;
++ (BOOL)checkKeyIdentifier:(NSString*)identifier;
++ (BOOL)deleteKey:(NSString*)identifier;
++ (NSString*)getKeyValue:(NSString*)identifier;
 
++ (UIImage*)imageFromColor:(UIColor*)color;
++ (UIImage*)imageFromColor:(UIColor*)color forSize:(CGSize)size withCornerRadius:(CGFloat)radius;
++ (void)addLabelBorderEdgeLine:(UILabel*)label andRectEdge:(UIRectEdge)edge andColor:(UIColor*)color andThickness:(CGFloat)thickness;
++ (void)addTextFieldBorderEdgeLine:(UITextField*)txtField andRectEdge:(UIRectEdge)edge andColor:(UIColor*)color andThickness:(CGFloat)thickness;
++ (NSString*)getAmountString:(NSString*)strAmount;
++ (NSString*)getAmountWithoutDecimalPoint:(NSString*)strAmount;
++ (NSString*)getAmtFormattedStrFromDouble:(double)dAmount;
++ (double)getAmtDoubleFromString:(NSString*)strAmt;
++ (BOOL)isBalanceGreaterOrEqual:(double)dBalance toAmount:(double)dAmt;
++ (NSString*)getDecimalSymbol;
 
-+ (UIImage *)imageFromColor:(UIColor *)color;
-+ (UIImage *)imageFromColor:(UIColor *)color forSize:(CGSize)size withCornerRadius:(CGFloat)radius;
-+(void)addLabelBorderEdgeLine:(UILabel*)label andRectEdge:(UIRectEdge)edge andColor:(UIColor *)color andThickness:(CGFloat)thickness;
-+(void)addTextFieldBorderEdgeLine:(UITextField*)txtField andRectEdge:(UIRectEdge)edge andColor:(UIColor *)color andThickness:(CGFloat)thickness;
-+(NSString *)getAmountString:(NSString *)strAmount;
-+(NSString *)getAmountWithoutDecimalPoint:(NSString *)strAmount;
-+(NSString *)getAmtFormattedStrFromDouble:(double)dAmount;
-+(double)getAmtDoubleFromString:(NSString *)strAmt;
-+(BOOL)isBalanceGreaterOrEqual:(double)dBalance toAmount:(double)dAmt;
-+(NSString *)getDecimalSymbol;
++ (float)getFloatValue:(id)inValue;
 
-+(float)getFloatValue:(id)inValue;
++ (NSString*)getDeviceUTCOffsetString;
++ (float)getDeviceUTCOffset;
++ (NSString*)getDeviceDateTimeFROMUTC:(NSString*)inDateTime;
++ (NSString*)getDeviceTimeFROMUTC:(NSString*)inDateTime andTimeFormate:(NSString*)inTimeFormat;
++ (NSString*)getDeviceDateFROMUTC:(NSString*)inDateTime andDateFormate:(NSString*)inDateFormat;
++ (NSString*)getLocalizedDeviceDateFROMUTC:(NSString*)inDateTime andDateFormate:(NSString*)inDateFormat;
++ (NSDate*)getDateFromString:(NSString*)inDateTime;
++ (void)registerSessionTimeStamp;
++ (BOOL)isSessionExpired;
++ (void)removeSessionTimeStamp;
 
-+(NSString *)getDeviceUTCOffsetString;
-+(float)getDeviceUTCOffset;
-+(NSString *)getDeviceDateTimeFROMUTC:(NSString *)inDateTime;
-+(NSString *)getDeviceTimeFROMUTC:(NSString *)inDateTime andTimeFormate:(NSString *)inTimeFormat;
-+(NSString *)getDeviceDateFROMUTC:(NSString *)inDateTime andDateFormate:(NSString *)inDateFormat;
-+(NSString *)getLocalizedDeviceDateFROMUTC:(NSString *)inDateTime andDateFormate:(NSString *)inDateFormat;
-+(NSDate *)getDateFromString:(NSString *)inDateTime;
-+(void)registerSessionTimeStamp;
-+(BOOL)isSessionExpired;
-+(void)removeSessionTimeStamp;
++ (BOOL)isAccountActivated;
++ (void)setAccountActivate:(BOOL)isActivate;
++ (void)deleteAccountActivate;
 
-+(BOOL)isAccountActivated;
-+(void)setAccountActivate:(BOOL)isActivate;
-+(void)deleteAccountActivate;
++ (BOOL)isAllowTransfer;
++ (void)setAllowTransfer:(BOOL)isAllowed;
++ (void)deleteAllowTransfer;
 
-+(BOOL)isAllowTransfer;
-+(void)setAllowTransfer:(BOOL)isAllowed;
-+(void)deleteAllowTransfer;
++ (UILabel*)createTitleLabelWithText:(NSString*)titleText andFrame:(CGRect)frame andTag:(NSInteger)tag andView:(UIView*)view;
 
-+(UILabel*)createTitleLabelWithText: (NSString*)titleText andFrame:(CGRect)frame andTag:(NSInteger)tag andView:(UIView *)view;
++ (NSString*)getCardColor:(NSInteger)intCard;
++ (UIColor*)getCardColor1:(NSString*)strColorCode;
++ (UIColor*)getCardColor2:(NSString*)strColorCode;
++ (NSInteger)getCardColorInt:(NSString*)strColorCode;
++ (void)setGradientcolor:(NSString*)gradientcolor toView:(UIView*)inView;
++ (NSString*)getCardBrandImageFileName:(NSString*)cardBrand;
++ (CGRect)labelWidthFromText:(UILabel*)label;
 
-+(NSString *)getCardColor:(NSInteger)intCard;
-+(UIColor *)getCardColor1:(NSString *)strColorCode;
-+(UIColor *)getCardColor2:(NSString *)strColorCode;
-+(NSInteger)getCardColorInt:(NSString *)strColorCode;
-+ (void)setGradientcolor:(NSString *) gradientcolor toView:(UIView *)inView;
-+(NSString *)getCardBrandImageFileName:(NSString *)cardBrand;
-+(CGRect)labelWidthFromText: (UILabel *)label;
++ (NSString*)sha256HashFor:(NSString*)input;
++ (NSString*)sha512HashFor:(NSString*)input;
++ (NSString*)getDeviceID;
++ (NSString*)getDeviceModel;
++ (NSString*)getDeviceOSVersion;
++ (CAShapeLayer*)drawShapeWithArray:(NSArray*)pointArray;
 
-+(NSString*)sha256HashFor:(NSString*)input;
-+(NSString*)sha512HashFor:(NSString*)input;
-+(NSString *)getDeviceID;
-+(NSString*) getDeviceModel;
-+(NSString *)getDeviceOSVersion;
-+(CAShapeLayer *)drawShapeWithArray:(NSArray *)pointArray;
++ (BOOL)isWalletFirstTab;
 
-+(BOOL)isWalletFirstTab;
++ (NSData*)getCardData;
++ (void)storeCardData:(NSData*)inDataWebResponse;
++ (BOOL)isCardDataUpdated:(NSData*)inDataWebResponse;
 
-+(NSData *)getCardData;
-+(void)storeCardData:(NSData *)inDataWebResponse;
-+(BOOL)isCardDataUpdated:(NSData *)inDataWebResponse;
++ (NSData*)getPurseData;
++ (void)storePurseData:(NSData*)inDataWebResponse;
++ (BOOL)isPurseDataUpdated:(NSData*)inDataWebResponse;
 
-+(NSData *)getPurseData;
-+(void)storePurseData:(NSData *)inDataWebResponse;
-+(BOOL)isPurseDataUpdated:(NSData *)inDataWebResponse;
++ (UIAlertController*)alertC:(NSString*)title Message:(NSString*)message cancelTitle:(NSString*)cancelTitle;
++ (UIAlertController*)alertC:(NSString*)title Message:(NSString*)message;
 
-+(UIAlertController *)alertC:(NSString *)title Message:(NSString *)message cancelTitle:(NSString *)cancelTitle;
-+(UIAlertController *)alertC:(NSString *)title Message:(NSString *)message;
++ (void)setAccBalance:(NSString*)strBalance;
++ (NSString*)parseAmountIntoValid2DecimalPointAmount:(NSNumber*)number;
++ (NSString*)parseString:(NSString*)string;
++ (NSString*)parsePercentageIntoValidTwoDecimalValue:(NSString*)percentage;
++ (NSString*)relativeDateStringForDate:(NSDate*)date;
++ (NSString*)relativeTimeStringForOneDay:(NSDate*)date;
++ (NSString*)encodeStringForDatabase:(NSString*)string;
++ (NSString*)decodeStringForDatabase:(NSString*)string;
++ (NSDictionary*)parseDictionary:(NSDictionary*)dict;
++ (NSArray*)parseArray:(NSArray*)array;
++ (NSString*)getAmtFormattedStrFromString:(NSString*)strAmount;
++ (BOOL)isBalanceGreaterOrEqual:(NSString*)strBalance withAmount:(NSString*)strAmt;
++ (NSString*)parseStrAmountIntoValidTwoDecimalValue:(NSString*)strAmount;
++ (UIImage*)setTintColor:(UIColor*)color forImage:(UIImage*)image;
++ (NSString*)getShortLocalizedDeviceDateFROMUTC:(NSString*)inDateTime andDateFormate:(NSString*)inDateFormat;
++ (void)popupView:(UIView*)viewPopUp onView:(UIView*)onView;
++ (NSString*)convertDictionaryIntoJSON:(NSDictionary*)dictionary;
++ (NSDictionary*)convertJSONIntoDictionary:(NSString*)jsonString;
++ (NSString*)getLocalizedDeviceDateFROMUTC:(NSString*)inDateTime WithInputFormat:(NSString*)inputFormate andOutputFormate:(NSString*)inDateFormat;
 
-+(void)setAccBalance:(NSString *)strBalance;
-+(NSString *)parseAmountIntoValid2DecimalPointAmount:(NSNumber *)number;
-+(NSString *)parseString:(NSString *)string;
-+(NSString *)parsePercentageIntoValidTwoDecimalValue:(NSString *)percentage;
-+ (NSString *)relativeDateStringForDate:(NSDate *)date;
-+ (NSString *)relativeTimeStringForOneDay:(NSDate *)date;
-+(NSString *)encodeStringForDatabase:(NSString *)string;
-+(NSString *)decodeStringForDatabase:(NSString *)string;
-+(NSDictionary *)parseDictionary:(NSDictionary *)dict;
-+(NSArray *)parseArray:(NSArray *)array;
-+(NSString *)getAmtFormattedStrFromString:(NSString *)strAmount;
-+(BOOL)isBalanceGreaterOrEqual:(NSString *)strBalance withAmount:(NSString *)strAmt;
-+(NSString *)parseStrAmountIntoValidTwoDecimalValue:(NSString *)strAmount;
-+ (UIImage *)setTintColor:(UIColor *)color forImage:(UIImage *)image;
-+(NSString *)getShortLocalizedDeviceDateFROMUTC:(NSString *)inDateTime andDateFormate:(NSString *)inDateFormat;
-+(void)popupView:(UIView*)viewPopUp onView:(UIView *)onView;
-+(NSString *)convertDictionaryIntoJSON:(NSDictionary *)dictionary;
-+(NSDictionary *)convertJSONIntoDictionary:(NSString *)jsonString;
-+(NSString *)getLocalizedDeviceDateFROMUTC:(NSString *)inDateTime WithInputFormat:(NSString *)inputFormate andOutputFormate:(NSString *)inDateFormat;
-
-+(NSAttributedString *)setTextShadow:(UILabel *)inLabel;
-+(void)addShadow:(UIView *)selectedView offset:(CGSize)offsetSize opacity:(float)shadowOpacity color:(UIColor *)shadowColor radius:(CGFloat)shadowRadius;
++ (NSAttributedString*)setTextShadow:(UILabel*)inLabel;
++ (void)addShadow:(UIView*)selectedView offset:(CGSize)offsetSize opacity:(float)shadowOpacity color:(UIColor*)shadowColor radius:(CGFloat)shadowRadius;
 //constant name
-+ (NSMutableAttributedString *)styleSalePriceLabel:(NSString *)salePrice withFont:(UIFont *)font rangeSmallerText:(NSRange)range;
-+ (void)drawDashedBorderAroundView:(UIView *)v borderColor:(UIColor *)color thickness:(CGFloat)thickness dashWidth:(CGFloat)width;
++ (NSMutableAttributedString*)styleSalePriceLabel:(NSString*)salePrice withFont:(UIFont*)font rangeSmallerText:(NSRange)range;
++ (void)drawDashedBorderAroundView:(UIView*)v borderColor:(UIColor*)color thickness:(CGFloat)thickness dashWidth:(CGFloat)width;
 
 //Get screeshot image of selected view
-+ (UIImage *)getScreenShotImage:(UIView *)selectedView;
++ (UIImage*)getScreenShotImage:(UIView*)selectedView;
 //Get screeshot image Data of selected view
-+ (NSData *)getScreenShotImageData:(UIView *)selectedView;
-+(BOOL)isValidDictionary:(NSDictionary *)dictionary;
++ (NSData*)getScreenShotImageData:(UIView*)selectedView;
++ (BOOL)isValidDictionary:(NSDictionary*)dictionary;
 
-+(NSString *)parseDataParamsForWebService:(NSString *)string;
++ (NSString*)parseDataParamsForWebService:(NSString*)string;
 
-+(BOOL)isInternetReachable;
-+(BOOL)isValidDictionary:(NSDictionary *)dictionary;
-+(NSString *)getNumberOfDaysLeftFromDate:(NSString *)futureDate;
-+(BOOL)isFirstTimeOfSimpleMode;
-+(BOOL)date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate;
-+(void)activeButton:(UIButton *)button isEnable:(BOOL)enable;
-+(float)getRespectiveFieldHeight;
-
++ (BOOL)isInternetReachable;
++ (BOOL)isValidDictionary:(NSDictionary*)dictionary;
++ (NSString*)getNumberOfDaysLeftFromDate:(NSString*)futureDate;
++ (BOOL)isFirstTimeOfSimpleMode;
++ (BOOL)date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate;
++ (void)activeButton:(UIButton*)button isEnable:(BOOL)enable;
++ (float)getRespectiveFieldHeight;
 
 //Screen sizes constants
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
@@ -192,12 +190,12 @@ typedef NS_OPTIONS(NSInteger, ComfortViewType) {
 #define IS_IPHONE_6P_NEW (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 #define IS_IPHONE_X (IS_IPHONE && SCREEN_MAX_LENGTH == 812)
 
-#define SCALE_W SCREEN_WIDTH/375
-#define SCALE_H SCREEN_HEIGHT/667
+#define SCALE_W SCREEN_WIDTH / 375
+#define SCALE_H SCREEN_HEIGHT / 667
 
-#define NAVIGATION_HEIGHT (self.navigationController.navigationBar.frame.size.height+[UIApplication sharedApplication].statusBarFrame.size.height)
+#define NAVIGATION_HEIGHT (self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height)
 
-#define SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_GRATERTHAN_OR_EQUALTO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 #define CARD_COLOR_0 @"Aqua"
 #define CARD_COLOR_1 @"GreyDaVinci"
@@ -211,7 +209,6 @@ typedef NS_OPTIONS(NSInteger, ComfortViewType) {
 #define CARD_COLOR_9 @"RedScarlet"
 #define CARD_COLOR_10 @"BlackJT"
 #define CARD_COLOR_11 @"Mint"
-
 
 #define Aqua_0 0x00C6FF
 #define Aqua_1 0x0072FF
@@ -246,15 +243,14 @@ typedef NS_OPTIONS(NSInteger, ComfortViewType) {
 #define BlackJT_0 0x817E7E
 #define BlackJT_1 0x4E4A4A
 
-
 #define Mint_0 0x4F9AC8
 #define Mint_1 0x324BA5
 #define kGradientLayerKey @"MyGradientLayer"
 
-#define TEXTFIELD_BG_COLOR [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0]
-#define BUTTON_BG [UIColor colorWithRed:19.0/255.0 green:201.0/255.0 blue:254.0/255.0 alpha:1.0]
-#define TEXT_COLOR [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]
-#define SUB_MEDIUM_TEXT_COLOR [UIColor colorWithRed:161.0/255.0 green:161.0/255.0 blue:161.0/255.0 alpha:1.0]
+#define TEXTFIELD_BG_COLOR [UIColor colorWithRed:245.0 / 255.0 green:245.0 / 255.0 blue:245.0 / 255.0 alpha:1.0]
+#define BUTTON_BG [UIColor colorWithRed:19.0 / 255.0 green:201.0 / 255.0 blue:254.0 / 255.0 alpha:1.0]
+#define TEXT_COLOR [UIColor colorWithRed:51.0 / 255.0 green:51.0 / 255.0 blue:51.0 / 255.0 alpha:1.0]
+#define SUB_MEDIUM_TEXT_COLOR [UIColor colorWithRed:161.0 / 255.0 green:161.0 / 255.0 blue:161.0 / 255.0 alpha:1.0]
 
 //textfield sizes for different devices
 #define DEFAULT_TEXTFIELD_SIZE DEFAULT_TEXTFIELD_SIZE_6P

@@ -7,7 +7,8 @@
 //
 
 #import "HomeViewController.h"
-@interface HomeViewController ()
+#import "APIManager.h"
+@interface HomeViewController ()<APIManagerDelegate>
 
 @end
 
@@ -26,7 +27,6 @@
     //UITextField
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 200, 300, 40)];
     textField.borderStyle = UITextBorderStyleRoundedRect;
-//    textField.font = [Utility fontHelveticaNeueSemibold:[LiquidPayStyle getFormattedFontSize:33]];
     textField.placeholder = @"enter text";
     textField.autocorrectionType = UITextAutocorrectionTypeNo;
     textField.keyboardType = UIKeyboardTypeDefault;
@@ -35,20 +35,13 @@
     textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     textField.delegate = self;
     [view addSubview:textField];
+
+    APIManager *manager = [[APIManager alloc] init];
     
-    //UITextField
-    UITextField *textField1 = [[UITextField alloc] initWithFrame:CGRectMake(10, 750, 300, 40)];
-    textField1.borderStyle = UITextBorderStyleRoundedRect;
-//    textField1.font = [Utility fontHelveticaNeueSemibold:[LiquidPayStyle getFormattedFontSize:33]];
-    textField1.placeholder = @"vao text";
-    textField1.autocorrectionType = UITextAutocorrectionTypeNo;
-    textField1.keyboardType = UIKeyboardTypeDefault;
-    textField1.returnKeyType = UIReturnKeyDone;
-    textField1.clearButtonMode = UITextFieldViewModeWhileEditing;
-    textField1.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-    textField1.delegate = self;
-    [view addSubview:textField1];
+    [manager call:@"User" setAction:HTTP_METHOD_GET setData:NULL setDelegate:self];
     
-    
+}
+-(void)APIManager:(NSString *)api setAction:(NSString *)action setData:(NSDictionary *)data response:(NSDictionary *)JSON{
+    DebugLog(@"🔷");
 }
 @end

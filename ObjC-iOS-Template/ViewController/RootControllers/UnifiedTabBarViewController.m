@@ -52,7 +52,8 @@
     //Configure Home Tab
     BaseNavigationController *vcProfile = [[BaseNavigationController alloc] initWithRootViewController:[[HomeViewController alloc]init]];
     vcProfile.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(TAB_BAR_ITEM,nil) image:[UIImage imageNamed:@"Profile_icon"] tag:2];
-    vcProfile.tabBarItem.image = [[UIImage imageNamed:@"Profile_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    vcProfile.tabBarItem.image = [[UIImage imageNamed:@"Profile_icon"]
+        imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vcProfile.tabBarItem.selectedImage = [[UIImage imageNamed:@"Profile_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     
     
@@ -141,7 +142,7 @@
 #pragma mark -  Call API
 
 #pragma mark -  Web Service
-    
+
 
 
 @end

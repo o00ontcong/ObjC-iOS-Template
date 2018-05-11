@@ -8,6 +8,7 @@
 
 #import "LeftSliderViewController.h"
 #import "LGSideMenuController.h"
+#import "APIManager.h"
 #define SIDE_MENU_TABLE_VIEW_SEPERATOR_COLOR [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:0.2]
 
 #define MENU_OPTION_0 @"Account Information"
@@ -101,20 +102,22 @@
     return [listOptions count];
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *cellIdentifier = @"CellIdentifer-SlideMenu";
-    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
-    cell.textLabel.text = [listOptions objectAtIndex:indexPath.row];
-    cell.textLabel.textColor = HEADER_BAR_TEXT_COLOR;
-    [cell setBackgroundColor:[UIColor clearColor]];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+  static NSString *cellIdentifier = @"CellIdentifer-SlideMenu";
+  UITableViewCell *cell = (UITableViewCell *)[tableView
+      dequeueReusableCellWithIdentifier:cellIdentifier];
+  if (cell == nil) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:cellIdentifier];
+  }
+  cell.textLabel.text = [listOptions objectAtIndex:indexPath.row];
+  cell.textLabel.textColor = HEADER_BAR_TEXT_COLOR;
+  [cell setBackgroundColor:[UIColor clearColor]];
+  cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
-    return cell;
+  return cell;
 }
 #pragma mark - UITableView Delegates
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
