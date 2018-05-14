@@ -7,10 +7,10 @@
 //
 
 #import "LoginViewController.h"
+#import "UserModel.h"
 @interface LoginViewController ()<APIManagerDelegate>{
     UITextField *textFieldUser, *textFieldPassword;
     UIButton* btnLogin;
-    APIManager* manager;
 
 }
 
@@ -31,7 +31,6 @@
         NSForegroundColorAttributeName : [UIColor whiteColor]
     }];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    manager = [[APIManager alloc] init];
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -173,13 +172,14 @@
 #pragma mark - IBActions
 - (IBAction)loginAction:(id)sender
 {
+    [Utility deleteKey:PROJECT_SESSIONKEY];
+    APIManager* manager = [[APIManager alloc] init];
+
     [manager call:PATH_LOGIN
           setAction:HTTP_METHOD_POST
           setData:@{@"userName":textFieldUser.text,@"password":textFieldPassword.text}
           isToken:NO
       setDelegate:self];
-    //    [Utility registerKey:PROJECT_SESSIONKEY withValue:textFieldUser.text];
-    //    [Helper authenticationChange];
 }
 - (IBAction)registerAction:(id)sender
 {
@@ -212,7 +212,11 @@
 
 #pragma mark -  Web Service
 -(void)APIManager:(NSString *)path setAction:(NSString *)action setData:(NSDictionary *)data completed:(NSDictionary *)JSON{
-    NSLog(@"");
+    if ([path isEqualToString:PATH_LOGIN]){
+        [Constants.shared setUserModel:[UserModel fromJSONDictionary:JSON]];
+        [Utility registerKey:PROJECT_SESSIONKEY withValue:Constants.shared.userModel.token];
+        [Helper authenticationChange];
+    }
 }
 -(void)APIManager:(NSString *)path setAction:(NSString *)action setData:(NSDictionary *)data failed:(NSError *)error{
     NSLog(@"");

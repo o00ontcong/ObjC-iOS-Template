@@ -7,7 +7,7 @@
 //
 
 #import "APIManager.h"
-@interface APIManager () <NSURLSessionDelegate> {
+@interface APIManager () {
     NSMutableData* webData;
 
     int timeoutInterval;
@@ -22,9 +22,7 @@
     if (self) {
         timeoutInterval = 20.0;
         sessionToken = [Utility getKeyValue:PROJECT_SESSIONKEY];
-        self.requestSerializer = [AFJSONRequestSerializer serializer];
-        [self.requestSerializer setValue:sessionToken forHTTPHeaderField:URL_TOKEN];
-
+      
     }
     return self;
 }
@@ -56,6 +54,14 @@
         isToken:(BOOL)isToken
     setDelegate:(id<APIManagerDelegate>)delegateRef
 {
+    if (isToken){
+        self.requestSerializer = [AFJSONRequestSerializer serializer];
+        [self.requestSerializer setValue:@"application/x-www-form-urlencoded; charset=UTF-8;" forHTTPHeaderField:@"Content-Type"];
+        [self.requestSerializer setTimeoutInterval:180];
+        self.responseSerializer = [AFJSONResponseSerializer serializer];
+        [self.requestSerializer setValue:sessionToken forHTTPHeaderField:URL_TOKEN];
+
+    }
     NSString * urlString = [NSString stringWithFormat:@"%@%@",URL_HOST,pathString];
     self.delegate = delegateRef;
     if (![APIManager isInternetAvailable]) {
@@ -85,7 +91,7 @@
         if (!self.isHideAlert){
             self.alertInvalid = [[UIAlertView alloc] initWithTitle:@"Error" message:[error.userInfo objectForKey:NSLocalizedDescriptionKey] delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok",nil) otherButtonTitles: nil];
             [self.alertInvalid show];
-            [Utility deleteKey:@"SESSIONKEY"];
+            [Utility deleteKey:PROJECT_SESSIONKEY];
             [Helper authenticationChange];
         }
         if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
@@ -93,11 +99,15 @@
         }
     } else {
         if ([action isEqualToString:HTTP_METHOD_GET]) {
+            DebugLog(@"%@",urlString);
             [self GET:urlString
                 parameters:data
                 progress:nil
                 success:^(NSURLSessionDataTask* _Nonnull task,
                     id _Nullable responseObject) {
+                    if (self.isShowResponse){
+                        DebugLog(@"%@",responseObject);
+                    }
                     if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:completed:)]){
                         [self.delegate APIManager:pathString setAction:action setData:data completed:responseObject];
 ;
@@ -107,6 +117,12 @@
                 }
                 failure:^(NSURLSessionDataTask* _Nullable task,
                     NSError* _Nonnull error) {
+                    
+                    if (!self.isHideAlert){
+                        self.alertInvalid = [[UIAlertView alloc] initWithTitle:@"Error" message:[error.userInfo objectForKey:NSLocalizedDescriptionKey] delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok",nil) otherButtonTitles: nil];
+                        [self.alertInvalid show];
+                    }
+                    
                     if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
                         [self.delegate APIManager:pathString setAction:action setData:data failed:error];
                     }else {
@@ -114,28 +130,42 @@
                     }
                 }];
         } else if ([action isEqualToString:HTTP_METHOD_POST]) {
-            [self POST:urlString
-                parameters:data
-                progress:nil
-                success:^(NSURLSessionDataTask* _Nonnull task,
-                    id _Nullable responseObject) {
-                    if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:completed:)]){
-                        [self.delegate APIManager:pathString setAction:action setData:data completed:responseObject];
-                    } else {
-                        DebugLog(@"❌APIManager.delegate is NULL❌");
-                    }
+            DebugLog(@"%@",urlString);
+            
+            [self POST:urlString parameters:data constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+                //do nothing
+            } progress:^(NSProgress * _Nonnull uploadProgress) {
+                //do nothing
+            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                if (self.isShowResponse){
+                    DebugLog(@"%@",responseObject);
                 }
-                failure:^(NSURLSessionDataTask* _Nullable task,
-                    NSError* _Nonnull error) {
-                    if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
-                        [self.delegate APIManager:pathString setAction:action setData:data failed:error];
-                    }else {
-                        DebugLog(@"❌APIManager.delegate is NULL❌");
-                    }
-                }];
+                if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:completed:)]){
+                    [self.delegate APIManager:pathString setAction:action setData:data completed:responseObject];
+                } else {
+                    DebugLog(@"❌APIManager.delegate is NULL❌");
+                }
+            } failure:^(NSURLSessionDataTask* _Nullable task, NSError*  _Nullable error) {
+                if (!self.isHideAlert){
+                    self.alertInvalid = [[UIAlertView alloc] initWithTitle:@"Error" message:[error.userInfo objectForKey:NSLocalizedDescriptionKey] delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok",nil) otherButtonTitles: nil];
+                    [self.alertInvalid show];
+                }
+                if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
+                    [self.delegate APIManager:pathString setAction:action setData:data failed:error];
+                }else {
+                    DebugLog(@"❌APIManager.delegate is NULL❌");
+                }
+            }];
+            
         } else {
-            NSError* error = [[NSError alloc] initWithDomain:@" " code:NSURLErrorUnknown userInfo:nil];
-
+            NSError* error = [[NSError alloc] initWithDomain:URL_HOST
+                                                        code:NSURLErrorUnknown
+                                                    userInfo:@{NSLocalizedDescriptionKey :
+                                                                   @"Wrong method"}];
+            if (!self.isHideAlert){
+                self.alertInvalid = [[UIAlertView alloc] initWithTitle:@"Error" message:[error.userInfo objectForKey:NSLocalizedDescriptionKey] delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok",nil) otherButtonTitles: nil];
+                [self.alertInvalid show];
+            }
             if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
                 [self.delegate APIManager:pathString setAction:action setData:data failed:error];
             }else {

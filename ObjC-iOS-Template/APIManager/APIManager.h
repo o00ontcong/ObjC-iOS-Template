@@ -32,6 +32,7 @@
 @property (weak, nonatomic) id<APIManagerDelegate> delegate;
 @property (strong, nonatomic) UIAlertView *alertInvalid;
 @property (assign, nonatomic) BOOL isHideAlert;
+@property (assign, nonatomic) BOOL isShowResponse;
 
 + (APIManager*)sharedManager;
 + (BOOL)isInternetAvailable;

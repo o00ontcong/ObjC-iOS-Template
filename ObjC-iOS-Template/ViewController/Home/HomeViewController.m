@@ -37,11 +37,16 @@
     [view addSubview:textField];
 
     APIManager *manager = [[APIManager alloc] init];
-    
-    [manager call:@"User" setAction:HTTP_METHOD_GET setData:NULL setDelegate:self];
+
+    [manager call:PATH_OVERVIEW_REPORT
+        setAction:HTTP_METHOD_POST
+          setData:@{@"shopId":@"295778",
+                    @"fromDate":@"05/01/2018",
+                    @"toDate":@"05/03/2018"}
+      setDelegate:self];
     
 }
--(void)APIManager:(NSString *)api setAction:(NSString *)action setData:(NSDictionary *)data response:(NSDictionary *)JSON{
-    DebugLog(@"🔷");
+-(void)APIManager:(NSString *)path setAction:(NSString *)action setData:(NSDictionary *)data completed:(NSDictionary *)JSON{
+    
 }
 @end

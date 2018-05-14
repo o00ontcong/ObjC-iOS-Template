@@ -204,6 +204,15 @@
 		48837F982091CCFB0040BACB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837F962091CCFB0040BACB /* Reachability.m */; };
 		48837F992091CCFB0040BACB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837F962091CCFB0040BACB /* Reachability.m */; };
 		48837F9A2091CCFB0040BACB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 48837F962091CCFB0040BACB /* Reachability.m */; };
+		48A08B7C20A57E01001A7F9A /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A08B7B20A57E01001A7F9A /* UserModel.m */; };
+		48A08B7D20A57E01001A7F9A /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A08B7B20A57E01001A7F9A /* UserModel.m */; };
+		48A08B7E20A57E01001A7F9A /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A08B7B20A57E01001A7F9A /* UserModel.m */; };
+		48A08B8120A59A74001A7F9A /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A08B8020A59A74001A7F9A /* BaseModel.m */; };
+		48A08B8220A59A74001A7F9A /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A08B8020A59A74001A7F9A /* BaseModel.m */; };
+		48A08B8320A59A74001A7F9A /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A08B8020A59A74001A7F9A /* BaseModel.m */; };
+		48AD982F20A93EC5005F70A4 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AD982E20A93EC5005F70A4 /* UserInfo.m */; };
+		48AD983020A93EC5005F70A4 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AD982E20A93EC5005F70A4 /* UserInfo.m */; };
+		48AD983120A93EC5005F70A4 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AD982E20A93EC5005F70A4 /* UserInfo.m */; };
 		48C3A0892092F89800352FB4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0872092F89800352FB4 /* MBProgressHUD.m */; };
 		48C3A08A2092F89800352FB4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0872092F89800352FB4 /* MBProgressHUD.m */; };
 		48C3A08B2092F89800352FB4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C3A0872092F89800352FB4 /* MBProgressHUD.m */; };
@@ -372,6 +381,12 @@
 		48837F922091CCA50040BACB /* KSReachability-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KSReachability-Prefix.pch"; sourceTree = "<group>"; };
 		48837F962091CCFB0040BACB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		48837F972091CCFB0040BACB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		48A08B7A20A57E01001A7F9A /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		48A08B7B20A57E01001A7F9A /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		48A08B7F20A59A74001A7F9A /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		48A08B8020A59A74001A7F9A /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		48AD982D20A93EC5005F70A4 /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		48AD982E20A93EC5005F70A4 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		48C3A0872092F89800352FB4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		48C3A0882092F89800352FB4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		48C3A0D52093078000352FB4 /* LGSideMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuSegue.h; sourceTree = "<group>"; };
@@ -538,6 +553,12 @@
 		486CCD0620917C61004A3AD6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				48A08B7A20A57E01001A7F9A /* UserModel.h */,
+				48A08B7B20A57E01001A7F9A /* UserModel.m */,
+				48A08B7F20A59A74001A7F9A /* BaseModel.h */,
+				48A08B8020A59A74001A7F9A /* BaseModel.m */,
+				48AD982D20A93EC5005F70A4 /* UserInfo.h */,
+				48AD982E20A93EC5005F70A4 /* UserInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -908,6 +929,7 @@
 				4870B96C2099B3AA003FA601 /* IFTTTAnimation.m in Sources */,
 				48375099209C3A1D00C0AA25 /* AFURLSessionManager.m in Sources */,
 				48837F632091BC9B0040BACB /* SDWebImageDownloaderOperation.m in Sources */,
+				48A08B8120A59A74001A7F9A /* BaseModel.m in Sources */,
 				48C3A0F52093078100352FB4 /* LGSideMenuBorderView.m in Sources */,
 				486CCD2020918510004A3AD6 /* Helper.m in Sources */,
 				4870B9572099B3AA003FA601 /* IFTTTAnimator.m in Sources */,
@@ -918,6 +940,8 @@
 				48837F8C2091C8FF0040BACB /* UYLPasswordManager.m in Sources */,
 				483750A2209C3A1D00C0AA25 /* AFSecurityPolicy.m in Sources */,
 				4870B9632099B3AA003FA601 /* IFTTTEasingFunction.m in Sources */,
+				48AD982F20A93EC5005F70A4 /* UserInfo.m in Sources */,
+				48A08B7C20A57E01001A7F9A /* UserModel.m in Sources */,
 				4870B96F2099B3AA003FA601 /* IFTTTScaleAnimation.m in Sources */,
 				48837F692091BC9B0040BACB /* UIImageView+WebCache.m in Sources */,
 				4870B9802099B578003FA601 /* ProjectStyle.m in Sources */,
@@ -985,6 +1009,7 @@
 				4870B96D2099B3AA003FA601 /* IFTTTAnimation.m in Sources */,
 				4837509A209C3A1D00C0AA25 /* AFURLSessionManager.m in Sources */,
 				48837F642091BC9B0040BACB /* SDWebImageDownloaderOperation.m in Sources */,
+				48A08B8220A59A74001A7F9A /* BaseModel.m in Sources */,
 				48C3A0F62093078100352FB4 /* LGSideMenuBorderView.m in Sources */,
 				48837EA5209195920040BACB /* Helper.m in Sources */,
 				4870B9582099B3AA003FA601 /* IFTTTAnimator.m in Sources */,
@@ -995,6 +1020,8 @@
 				48837F8D2091C8FF0040BACB /* UYLPasswordManager.m in Sources */,
 				483750A3209C3A1D00C0AA25 /* AFSecurityPolicy.m in Sources */,
 				4870B9642099B3AA003FA601 /* IFTTTEasingFunction.m in Sources */,
+				48AD983020A93EC5005F70A4 /* UserInfo.m in Sources */,
+				48A08B7D20A57E01001A7F9A /* UserModel.m in Sources */,
 				4870B9702099B3AA003FA601 /* IFTTTScaleAnimation.m in Sources */,
 				48837F6A2091BC9B0040BACB /* UIImageView+WebCache.m in Sources */,
 				4870B9812099B578003FA601 /* ProjectStyle.m in Sources */,
@@ -1062,6 +1089,7 @@
 				4870B96E2099B3AA003FA601 /* IFTTTAnimation.m in Sources */,
 				4837509B209C3A1D00C0AA25 /* AFURLSessionManager.m in Sources */,
 				48837F652091BC9B0040BACB /* SDWebImageDownloaderOperation.m in Sources */,
+				48A08B8320A59A74001A7F9A /* BaseModel.m in Sources */,
 				48C3A0F72093078100352FB4 /* LGSideMenuBorderView.m in Sources */,
 				48837EC1209195E40040BACB /* Helper.m in Sources */,
 				4870B9592099B3AA003FA601 /* IFTTTAnimator.m in Sources */,
@@ -1072,6 +1100,8 @@
 				48837F8E2091C8FF0040BACB /* UYLPasswordManager.m in Sources */,
 				483750A4209C3A1D00C0AA25 /* AFSecurityPolicy.m in Sources */,
 				4870B9652099B3AA003FA601 /* IFTTTEasingFunction.m in Sources */,
+				48AD983120A93EC5005F70A4 /* UserInfo.m in Sources */,
+				48A08B7E20A57E01001A7F9A /* UserModel.m in Sources */,
 				4870B9712099B3AA003FA601 /* IFTTTScaleAnimation.m in Sources */,
 				48837F6B2091BC9B0040BACB /* UIImageView+WebCache.m in Sources */,
 				4870B9822099B578003FA601 /* ProjectStyle.m in Sources */,

@@ -9,5 +9,22 @@
 #import "Constants.h"
 
 @implementation Constants
-
++ (Constants*)shared
+{
+    static Constants* _sharedManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedManager = [[self alloc] init];
+    });
+    
+    return _sharedManager;
+    
+}
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
 @end
