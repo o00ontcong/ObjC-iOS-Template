@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cncollectionviewcell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    self.layer.cornerRadius = 10.0f;
+    self.layer.masksToBounds = YES;
+    self.contentView.layer.cornerRadius = 10.0f;
+    self.contentView.layer.masksToBounds = YES;
+    [self.contentView setBackgroundColor:[UIColor whiteColor]];
+    
+    
+    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:10.0f];
+    self.layer.masksToBounds = NO;
+    self.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.layer.shadowOffset = CGSizeMake(0.0f, 0.0f);
+    self.layer.shadowOpacity = 0.3f;
+    self.layer.shadowRadius = 4.0f;
+    self.layer.shadowPath = shadowPath.CGPath;
+    
+    
+    self.imgView =[[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.frameWidth, self.frameHeight)];
+    [self.contentView addSubview:self.imgView];
+    
+
+    return self;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0C257BF7-CCE5-4E56-91C4-5C2C9B249BBE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cncollectionviewcell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

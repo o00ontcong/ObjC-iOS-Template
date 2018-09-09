@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cnkeyboardShowHide</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)addKeyboardNotificationsObserver {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleKeyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleKeyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    
+}
+
+- (void)handleKeyboardWillShow:(NSNotification *)paramNotification
+
+{
+    
+    NSDictionary* info = [paramNotification userInfo];
+    
+    //when switching languages keyboard might change its height (emoji keyboard is higher than most keyboards).
+    //You can get both sizes of the previous keyboard and the new one from info dictionary.
+    
+    // size of the keyb that is about to disappear
+    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    
+    // size of the keyb that is about to appear
+    CGSize kbSizeNew = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    
+    //make adjustments to constraints here...
+    
+    //and here where's magick happen!
+    
+    [self.view layoutIfNeeded];
+    
+}
+
+- (void)handleKeyboardWillHide:(NSNotification *)paramNotification
+
+{
+    //adjust constraints
+    
+    [self.view layoutIfNeeded];
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9601AB64-A33C-421C-A834-41DB56648142</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cnkeyboardShowHide</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

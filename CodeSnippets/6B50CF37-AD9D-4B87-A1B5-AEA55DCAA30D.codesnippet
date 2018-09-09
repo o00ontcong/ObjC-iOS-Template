@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cntimer</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) NSTimer *timerForLoopStatus;
+self.timerForLoopStatus = [NSTimer scheduledTimerWithTimeInterval:3
+                                                           target:self
+                                                         selector:@selector(callws_ShowMyQRPaymentStatus)
+                                                         userInfo:nil
+                                                          repeats:YES];
+if ([self.timerForLoopStatus isValid]){
+    [self.timerForLoopStatus invalidate];
+}
+self.timerForLoopStatus = nil;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6B50CF37-AD9D-4B87-A1B5-AEA55DCAA30D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cntimer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cnmark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Lifecycle
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self configureView];
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+}
+
+#pragma mark - Custom Accessors
+-(void)configureView{
+}
+
+#pragma mark - IBActions
+
+- (IBAction)submitData:(id)sender {}
+
+#pragma mark - Public
+
+- (void)publicMethod {}
+
+#pragma mark - Private
+
+- (void)privateMethod {}
+
+#pragma mark - Protocol conformance
+
+#pragma mark -  Call API
+
+#pragma mark -  Web Service
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7FDD58E5-7678-4794-ADBD-766F9DF7DDE6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cnmark</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

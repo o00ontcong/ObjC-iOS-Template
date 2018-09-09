@@ -51,7 +51,7 @@
 {
     // ImageView
     UIImageView* imageView = [[UIImageView alloc]
-        initWithFrame:CGRectMake(0, 90, 101 * SCALE_W, 35 * SCALE_W)];
+        initWithFrame:CGRectMake(0, 90, 101 * SW, 35 * SW)];
     imageView.centerX = view.centerX;
     UIImage* image = [UIImage imageNamed:@"Flow"];
     [imageView setContentMode:UIViewContentModeScaleToFill];
@@ -112,7 +112,7 @@
     [view addSubview:btnLogin];
 
     UILabel* registerLabel = [[UILabel alloc]
-        initWithFrame:CGRectMake(sideMargins, btnLogin.bottom + 25 * SCALE_H,
+        initWithFrame:CGRectMake(sideMargins, btnLogin.bottom + 25 * SH,
                           self.view.width - (sideMargins * 2.0), 20)];
     registerLabel.textColor = [UIColor whiteColor];
     [registerLabel

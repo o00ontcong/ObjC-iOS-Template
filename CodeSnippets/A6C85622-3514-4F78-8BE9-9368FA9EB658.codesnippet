@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cntableviewcell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self configureView];
+    }
+    return self;
+}
+
+-(void)configureView{
+    
+    //UIView
+    self.contentView.backgroundColor = BACKGROUND;
+    UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(12, 0, SCREEN_WIDTH - 24, 71*SCALE_H)];
+    myView.backgroundColor = BACKGROUND_OTHER;
+    myView.layer.cornerRadius = 4;
+    myView.layer.masksToBounds = YES;
+    [self.contentView addSubview:myView];
+    
+    self.imgLogo = [[UIImageView alloc] initWithFrame:CGRectMake(8*SCALE_W, 5.5*SCALE_H, 63*SCALE_W, 63*SCALE_W)];
+    self.imgLogo.contentMode = UIViewContentModeScaleAspectFit;
+    [myView addSubview: self.imgLogo];
+    
+    self.lblName = [[UILabel alloc] initWithFrame:CGRectMake(self.imgLogo.right + 19*SCALE_W, 15*SCALE_H, 200*SCALE_W, 16)];
+    self.lblName.textColor = SUB_TEXT_COLOR;
+    self.lblName.font = [Utility fontHelveticaNeueSemibold:[LiquidPayStyle getFormattedFontSize:14]];
+    self.lblName.adjustsFontSizeToFitWidth = YES;
+    self.lblName.minimumScaleFactor = 1.0;
+    [myView addSubview:self.lblName];
+    
+    self.lblDescripton = [[UILabel alloc] initWithFrame:CGRectMake(self.lblName.frameX, self.lblName.bottom, 210*SCALE_W, 27)];
+    self.lblDescripton.textColor = SUB_SUB_TEXT_COLOR;
+    self.lblDescripton.font = [Utility fontHelveticaNeue:[LiquidPayStyle getFormattedFontSize:10]];
+    self.lblDescripton.numberOfLines = 0;
+    [myView addSubview:self.lblDescripton];
+    
+    //ImageView
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(327.5*SCALE_W,0,6*SCALE_W,11*SCALE_W)];
+    imageView.centerY = myView.centerY;
+    UIImage *image = [UIImage imageNamed:@"Disclosure_Indicator"];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+    imageView.image = image;
+    [myView addSubview:imageView];
+}
+-(void)updateLayout
+{
+
+    [self layoutIfNeeded];
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A6C85622-3514-4F78-8BE9-9368FA9EB658</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cntableviewcell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cnsoundvibrate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;AudioToolbox/AudioToolbox.h&gt;
+#import &lt;AVFoundation/AVFoundation.h&gt;
+SystemSoundID soundID;
+-(void)playSound {
+    
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"calypso" ofType:@"mp3"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &amp;soundID);
+    AudioServicesPlaySystemSound (soundID);
+    NSNumber * vibratetime = [NSNumber numberWithInteger:0];
+    [self performSelector:@selector(startVibrate:) withObject:vibratetime afterDelay:1];
+    
+}
+
+-(void)startVibrate:(NSNumber*)count{
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    if ([count integerValue]&lt;1) {
+        count = [NSNumber numberWithInteger:[count integerValue]+1];
+        [self performSelector:@selector(startVibrate:) withObject:count afterDelay:1];
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>14216487-F26D-46D5-8BCE-7DA42240AFF7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cnsoundvibrate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

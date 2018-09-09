@@ -24,19 +24,42 @@
 }
 
 -(void)configureView{
-    //UITextField
-    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 200, 300, 40)];
-    textField.borderStyle = UITextBorderStyleRoundedRect;
-    textField.placeholder = @"enter text";
-    textField.autocorrectionType = UITextAutocorrectionTypeNo;
-    textField.keyboardType = UIKeyboardTypeDefault;
-    textField.returnKeyType = UIReturnKeyNext;
-    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-    textField.delegate = self;
-    [view addSubview:textField];
 
-    APIManager *manager = [[APIManager alloc] init];
+    
+    //UILabel
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0*SW, 0*SW, 0*SW, 0*SW)];
+    label.textColor = TEXT_COLOR;
+    label.adjustsFontSizeToFitWidth = YES;
+    [label setFont:[Utility fontHelveticaNeueMedium:[ProjectStyle getFormattedFontSize:11]]];
+    label.textAlignment = NSTextAlignmentLeft;
+    label.numberOfLines = 0;
+    [label setText:NSLocalizedString(@"title_my_qrcode", nil)];
+    [view addSubview:label];
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//    APIManager *manager = [[APIManager alloc] init];
 
 //    [manager call:PATH_OVERVIEW_REPORT
 //        setAction:HTTP_METHOD_POST

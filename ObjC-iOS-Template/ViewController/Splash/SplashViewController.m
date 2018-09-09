@@ -37,7 +37,7 @@
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     btnSkip = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnSkip.frame =CGRectMake(76.5*SCALE_W, SCREEN_HEIGHT - 2*18*SCALE_H, 224*SCALE_W, 25*SCALE_H);
+    btnSkip.frame =CGRectMake(76.5*SW, SCREEN_HEIGHT - 2*18*SH, 224*SW, 25*SH);
     [btnSkip addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"btn_skip_and_continue", nil)];
     UIFont *font2 = [Utility fontHelveticaNeue:[ProjectStyle getFormattedFontSize:16]];
@@ -50,27 +50,27 @@
     [self.view addSubview:btnSkip];
     
     btnRegister = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnRegister.frame =CGRectMake(29.5*SCALE_W, btnSkip.top - 20.5*SCALE_H - 45*SCALE_H, 150*SCALE_W, 45*SCALE_H);
+    btnRegister.frame =CGRectMake(29.5*SW, btnSkip.top - 20.5*SH - 45*SH, 150*SW, 45*SH);
     [btnRegister setTitle:NSLocalizedString(@"btn_register",nil) forState:UIControlStateNormal];
     [btnRegister addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [btnRegister setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    btnRegister.layer.cornerRadius = 4*SCALE_W;
+    btnRegister.layer.cornerRadius = 4*SW;
     btnRegister.layer.borderWidth = 1;
     btnRegister.layer.borderColor = [UIColor whiteColor].CGColor;
     btnRegister.layer.masksToBounds = YES;
     [self.view addSubview:btnRegister]  ;
     
     btnLogin = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnLogin.frame =CGRectMake(btnRegister.right + 16*SCALE_W, btnSkip.top - 20.5*SCALE_H - 45*SCALE_H, 150*SCALE_W, 45*SCALE_H);
+    btnLogin.frame =CGRectMake(btnRegister.right + 16*SW, btnSkip.top - 20.5*SH - 45*SH, 150*SW, 45*SH);
     [btnLogin setTitle:NSLocalizedString(@"btn_login",nil) forState:UIControlStateNormal];
     [btnLogin addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [btnLogin setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btnLogin setBackgroundColor:BUTTON_BG];
-    btnLogin.layer.cornerRadius = 4*SCALE_W;
+    btnLogin.layer.cornerRadius = 4*SW;
     btnLogin.layer.masksToBounds = YES;
     [self.view addSubview:btnLogin];
     
-    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, btnRegister.top - 55*SCALE_H, SCREEN_WIDTH, 40*SCALE_H)];
+    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, btnRegister.top - 55*SH, SCREEN_WIDTH, 40*SH)];
     self.pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     self.pageControl.pageIndicatorTintColor = [UIColor grayColor];
     self.pageControl.tintColor = [UIColor grayColor];
@@ -115,7 +115,7 @@
     [self.scrollView addSubview:self.page1Image];
     
     //UILabel
-    UILabel *page1Label = [[UILabel alloc] initWithFrame:CGRectMake(20*SCALE_W + offsetX, 404*SCALE_H, SCREEN_WIDTH - 40*SCALE_W, 60*SCALE_H)];
+    UILabel *page1Label = [[UILabel alloc] initWithFrame:CGRectMake(20*SW + offsetX, 404*SH, SCREEN_WIDTH - 40*SW, 60*SH)];
     page1Label.textColor = [UIColor whiteColor];
     if ( IS_IPHONE_5_NEW){
         [page1Label setFont:[Utility fontHelveticaNeueBold:[ProjectStyle getFormattedFontSize:24]]];
@@ -131,7 +131,7 @@
     
     
     //UILabel
-    UILabel *page1Label2 = [[UILabel alloc] initWithFrame:CGRectMake(29.5*SCALE_W  + offsetX, 467*SCALE_H, 315.5*SCALE_W, 36*SCALE_H)];
+    UILabel *page1Label2 = [[UILabel alloc] initWithFrame:CGRectMake(29.5*SW  + offsetX, 467*SH, 315.5*SW, 36*SH)];
     page1Label2.textColor = [UIColor whiteColor];
     if (IS_IPHONE_5_NEW){
         [page1Label2 setFont:[Utility fontHelveticaNeueMedium:[ProjectStyle getFormattedFontSize:14]]];
@@ -153,7 +153,7 @@
     [self.scrollView addSubview:self.page2Image];
     
     //UILabel
-    UILabel *page2Label = [[UILabel alloc] initWithFrame:CGRectMake(20*SCALE_W + offsetX, 404*SCALE_H, SCREEN_WIDTH - 40*SCALE_W, 60*SCALE_H)];
+    UILabel *page2Label = [[UILabel alloc] initWithFrame:CGRectMake(20*SW + offsetX, 404*SH, SCREEN_WIDTH - 40*SW, 60*SH)];
     page2Label.textColor = [UIColor whiteColor];
     if ( IS_IPHONE_5_NEW){
         [page2Label setFont:[Utility fontHelveticaNeueBold:[ProjectStyle getFormattedFontSize:24]]];
@@ -169,7 +169,7 @@
     [self.scrollView addSubview:page2Label];
     
     //UILabel
-    UILabel *page2Label2 = [[UILabel alloc] initWithFrame:CGRectMake(29.5*SCALE_W  + offsetX, 467*SCALE_H, 315.5*SCALE_W, 36*SCALE_H)];
+    UILabel *page2Label2 = [[UILabel alloc] initWithFrame:CGRectMake(29.5*SW  + offsetX, 467*SH, 315.5*SW, 36*SH)];
     page2Label2.textColor = [UIColor whiteColor];
     if (IS_IPHONE_5_NEW){
         [page2Label2 setFont:[Utility fontHelveticaNeueMedium:[ProjectStyle getFormattedFontSize:14]]];
@@ -192,7 +192,7 @@
     [self.scrollView addSubview:self.page3Image];
     
     //UILabel
-    UILabel *page3Label = [[UILabel alloc] initWithFrame:CGRectMake(20*SCALE_W + offsetX, 404*SCALE_H, SCREEN_WIDTH - 40*SCALE_W, 60*SCALE_H)];
+    UILabel *page3Label = [[UILabel alloc] initWithFrame:CGRectMake(20*SW + offsetX, 404*SH, SCREEN_WIDTH - 40*SW, 60*SH)];
     page3Label.textColor = [UIColor whiteColor];
     if ( IS_IPHONE_5_NEW){
         [page3Label setFont:[Utility fontHelveticaNeueBold:[ProjectStyle getFormattedFontSize:24]]];
@@ -208,7 +208,7 @@
     [self.scrollView addSubview:page3Label];
     
     //UILabel
-    UILabel *page3Label2 = [[UILabel alloc] initWithFrame:CGRectMake(29.5*SCALE_W  + offsetX, 467*SCALE_H, 315.5*SCALE_W, 36*SCALE_H)];
+    UILabel *page3Label2 = [[UILabel alloc] initWithFrame:CGRectMake(29.5*SW  + offsetX, 467*SH, 315.5*SW, 36*SH)];
     page3Label2.textColor = [UIColor whiteColor];
     if (IS_IPHONE_5_NEW){
         [page3Label2 setFont:[Utility fontHelveticaNeueMedium:[ProjectStyle getFormattedFontSize:14]]];
@@ -230,7 +230,7 @@
     [self.scrollView addSubview:self.page4Image];
     
     //UILabel
-    UILabel *page4Label = [[UILabel alloc] initWithFrame:CGRectMake(20*SCALE_W + offsetX, 404*SCALE_H, SCREEN_WIDTH - 40*SCALE_W, 60*SCALE_H)];
+    UILabel *page4Label = [[UILabel alloc] initWithFrame:CGRectMake(20*SW + offsetX, 404*SH, SCREEN_WIDTH - 40*SW, 60*SH)];
     page4Label.textColor = [UIColor whiteColor];
     if ( IS_IPHONE_5_NEW){
         [page4Label setFont:[Utility fontHelveticaNeueBold:[ProjectStyle getFormattedFontSize:24]]];
@@ -246,7 +246,7 @@
     [self.scrollView addSubview:page4Label];
     
     //UILabel
-    UILabel *page4Label2 = [[UILabel alloc] initWithFrame:CGRectMake(29.5*SCALE_W  + offsetX, 467*SCALE_H, 315.5*SCALE_W, 36*SCALE_H)];
+    UILabel *page4Label2 = [[UILabel alloc] initWithFrame:CGRectMake(29.5*SW  + offsetX, 467*SH, 315.5*SW, 36*SH)];
     page4Label2.textColor = [UIColor whiteColor];
     if (IS_IPHONE_5_NEW){
         [page4Label2 setFont:[Utility fontHelveticaNeueMedium:[ProjectStyle getFormattedFontSize:14]]];

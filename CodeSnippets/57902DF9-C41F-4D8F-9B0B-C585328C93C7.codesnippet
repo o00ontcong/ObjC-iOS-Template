@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>isValidateUppercaseAndlowercase</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+(BOOL)isValidateUppercaseAndlowercase: (UITextField *)textField{
+    
+    NSCharacterSet *lowerCase  = [NSCharacterSet lowercaseLetterCharacterSet];
+    NSCharacterSet *upperCase  = [NSCharacterSet uppercaseLetterCharacterSet];
+    
+    if ([textField.text rangeOfCharacterFromSet:lowerCase].location == NSNotFound) {
+        return NO;
+    }
+    if ([textField.text rangeOfCharacterFromSet:upperCase].location == NSNotFound) {
+        return NO;
+    }
+    return YES;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>57902DF9-C41F-4D8F-9B0B-C585328C93C7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>isValidateUppercaseAndlowercase</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

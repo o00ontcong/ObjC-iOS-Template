@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>objecExecutionTime</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)methodStart {
+    timeStart = [NSDate date];
+}
+- (void)methodEnd{
+    timeFinish = [NSDate date];
+    NSTimeInterval executionTime = [timeFinish timeIntervalSinceDate:timeStart];
+    NSLog(@"executionTime = %f", executionTime);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>618E4FCE-8934-4E5C-A50E-55E0D74DF97B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>objecExecutionTime</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

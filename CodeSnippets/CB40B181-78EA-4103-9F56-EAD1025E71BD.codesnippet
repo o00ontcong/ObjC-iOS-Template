@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>isValidateNumericCharacter</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+(BOOL)isValidateNumericCharacter: (UITextField *)textField{
+    NSCharacterSet* notDigits = [NSCharacterSet decimalDigitCharacterSet];
+    if ([textField.text rangeOfCharacterFromSet:notDigits].location == NSNotFound)
+    {
+        return NO;
+    }
+    return YES;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CB40B181-78EA-4103-9F56-EAD1025E71BD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>isValidateNumericCharacter</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

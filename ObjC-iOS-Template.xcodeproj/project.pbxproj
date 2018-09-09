@@ -597,10 +597,10 @@
 		48963829214558A000537B2F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				489638A7214558A100537B2F /* Utility.h */,
 				4896382A214558A000537B2F /* Utility.m */,
 				4896382B214558A000537B2F /* Library */,
 				48963894214558A000537B2F /* Extensions */,
-				489638A7214558A100537B2F /* Utility.h */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";

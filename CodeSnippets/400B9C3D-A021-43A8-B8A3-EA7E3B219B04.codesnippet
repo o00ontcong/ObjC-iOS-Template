@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cntextviewhtml</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+    NSAttributedString *attributedString = [[NSAttributedString alloc]
+                                            initWithData: [strTNC dataUsingEncoding:NSUnicodeStringEncoding]
+                                            options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+                                            documentAttributes: nil
+                                            error: nil
+                                            ];
+    
+    textViewConsent.attributedText = attributedString;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>400B9C3D-A021-43A8-B8A3-EA7E3B219B04</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cntextviewhtml</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

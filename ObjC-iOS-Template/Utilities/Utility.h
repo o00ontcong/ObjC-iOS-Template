@@ -215,8 +215,8 @@ alpha:1.0]
 #define IS_IPHONE_6P_NEW (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 #define IS_IPHONE_X (IS_IPHONE && SCREEN_MAX_LENGTH == 812)
 
-#define SCALE_W SCREEN_WIDTH / 375
-#define SCALE_H SCREEN_HEIGHT / 667
+#define SW SCREEN_WIDTH / 375
+#define SH SCREEN_HEIGHT / 667
 
 #define NAVIGATION_HEIGHT (self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height)
 

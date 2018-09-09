@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cnalert</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//UIAlertController
+UIAlertController *alertExpired = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"title_amount_alert_expired", ni) preferredStyle:UIAlertControllerStyleAlert];
+UIAlertAction *YesAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"button_title_amount_alert_regenerate", ni) style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+    
+}];
+UIAlertAction *noAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"button_title_amount_alert_go_back", ni) style:UIAlertActionStyleCancel handler:^(UIAlertAction * action){
+    
+}];
+
+[alertExpired addAction:YesAction];
+[alertExpired addAction:noAction];
+[self presentViewController:alertExpired animated:NO completion:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D33A6F34-7795-4C7F-AAEF-0A6E7515307E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cnalert</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

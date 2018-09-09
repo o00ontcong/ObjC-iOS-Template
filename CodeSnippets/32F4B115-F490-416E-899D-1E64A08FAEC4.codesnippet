@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hasInvalidChars</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+(BOOL)hasInvalidChars:(UITextField *)textField {
+    NSMutableCharacterSet *validCharSet = [NSMutableCharacterSet alphanumericCharacterSet];
+    [validCharSet formUnionWithCharacterSet:[NSCharacterSet characterSetWithCharactersInString:@"!@#$%^&amp;*"]];
+    NSCharacterSet *invalidCharSet = [validCharSet invertedSet];
+    
+    if ([textField.text rangeOfCharacterFromSet:invalidCharSet].location == NSNotFound) {
+        return NO;
+    }
+    return YES;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>32F4B115-F490-416E-899D-1E64A08FAEC4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>hasInvalidChars</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

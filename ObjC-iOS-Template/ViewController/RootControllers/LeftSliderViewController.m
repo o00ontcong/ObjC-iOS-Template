@@ -49,14 +49,14 @@
     [self.view setBackgroundColor:HEADER_BAR];
 
     //ImageView
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,47.5*SCALE_W,50*SCALE_W,50*SCALE_W)];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,47.5*SW,50*SW,50*SW)];
     imageView.centerX = LEFT_SLIDER_VIEW_WIDTH/2;
     UIImage *image = [UIImage imageNamed:@"avatar_placeholder_50x50"];
     [imageView setContentMode:UIViewContentModeScaleToFill];
     imageView.image = image;
     [view addSubview:imageView];
     //UILabel
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, imageView.bottom , LEFT_SLIDER_VIEW_WIDTH - 40, 44*SCALE_W)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, imageView.bottom , LEFT_SLIDER_VIEW_WIDTH - 40, 44*SW)];
     label.textColor = HEADER_BAR_TEXT_COLOR;
     label.adjustsFontSizeToFitWidth = YES;
     label.textAlignment = NSTextAlignmentCenter;

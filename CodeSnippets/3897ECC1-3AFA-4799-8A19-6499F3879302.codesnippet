@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cngenerateQRCode</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark Generate QRCode
+CIImage *qrCode = [self createQRForString:stringQRCODE];
+
+// Convert to an UIImage
+UIImage *qrCodeImg = [self createNonInterpolatedUIImageFromCIImage:qrCode withScale:2*[[UIScreen mainScreen] scale]];
+- (CIImage *)createQRForString:(NSString *)qrString
+{
+    // Need to convert the string to a UTF-8 encoded NSData object
+    NSData *stringData = [qrString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    // Create the filter
+    CIFilter *qrFilter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    // Set the message content and error-correction level
+    [qrFilter setValue:stringData forKey:@"inputMessage"];
+    [qrFilter setValue:@"H" forKey:@"inputCorrectionLevel"];
+    
+    // Send the image back
+    return qrFilter.outputImage;
+}
+- (UIImage *)createNonInterpolatedUIImageFromCIImage:(CIImage *)image withScale:(CGFloat)scale
+{
+    // Render the CIImage into a CGImage
+    CGImageRef cgImage = [[CIContext contextWithOptions:nil] createCGImage:image fromRect:image.extent];
+    
+    // Now we'll rescale using CoreGraphics
+    UIGraphicsBeginImageContext(CGSizeMake(image.extent.size.width * scale, image.extent.size.width * scale));
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    // We don't want to interpolate (since we've got a pixel-correct image)
+    CGContextSetInterpolationQuality(context, kCGInterpolationNone);
+    CGContextDrawImage(context, CGContextGetClipBoundingBox(context), cgImage);
+    // Get the image out
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    // Tidy up
+    UIGraphicsEndImageContext();
+    CGImageRelease(cgImage);
+    return scaledImage;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3897ECC1-3AFA-4799-8A19-6499F3879302</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cngenerateQRCode</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

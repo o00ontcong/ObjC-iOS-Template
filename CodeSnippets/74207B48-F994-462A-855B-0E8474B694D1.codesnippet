@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cnimageview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//ImageView
+UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0*SW, 0*SW, 0*SW, 0*SW)];
+UIImage *image = [UIImage imageNamed:@"QR Code place holder"];
+[imageView setContentMode:UIViewContentModeScaleToFill];
+imageView.image = image;
+[view addSubview:imageView];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>74207B48-F994-462A-855B-0E8474B694D1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cnimageView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
