@@ -108,14 +108,14 @@
 
 - (void)animate:(NSInteger)time
 {
-    DebugLog(@"Hey pal! You need to use a subclass of IFTTTAnimation.");
+     (@"Hey pal! You need to use a subclass of IFTTTAnimation.");
 }
 
 - (IFTTTAnimationFrame *)frameForTime:(NSInteger)time
                         startKeyFrame:(IFTTTAnimationKeyFrame *)startKeyFrame
                           endKeyFrame:(IFTTTAnimationKeyFrame *)endKeyFrame
 {
-    DebugLog(@"Hey pal! You need to use a subclass of IFTTTAnimation.");
+     (@"Hey pal! You need to use a subclass of IFTTTAnimation.");
     return startKeyFrame;
 }
 

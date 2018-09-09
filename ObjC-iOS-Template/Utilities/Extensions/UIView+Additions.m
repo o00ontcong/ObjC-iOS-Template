@@ -10,8 +10,8 @@
 
 - (void)printAllSubviews:(NSString*)indent
 {
-//    DebugLog(@"%@%@",indent,self);
-    DebugLog(@"%@(RESP %@)",indent,[self nextResponder]);
+//     (@"%@%@",indent,self);
+     (@"%@(RESP %@)",indent,[self nextResponder]);
     for (UIView *subview in self.subviews) {
         [subview printAllSubviews:[NSString stringWithFormat:@"   %@",indent]];
     }
@@ -19,9 +19,9 @@
 
 - (void)printAllSubviews
 {
-    DebugLog(@"**** SUB VIEWS ****");
+     (@"**** SUB VIEWS ****");
     [self printAllSubviews:@""];
-    DebugLog(@"**** ********* ****");
+     (@"**** ********* ****");
 }
 
 - (UIViewController*)findViewController

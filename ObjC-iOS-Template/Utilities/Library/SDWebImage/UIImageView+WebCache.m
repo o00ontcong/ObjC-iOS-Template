@@ -8,7 +8,7 @@
 
 #import "UIImageView+WebCache.h"
 #import "objc/runtime.h"
-
+#import "Utility.h"
 static char imageURLKey;
 static char operationKey;
 static char operationArrayKey;

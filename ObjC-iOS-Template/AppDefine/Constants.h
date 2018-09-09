@@ -16,27 +16,6 @@
 @end
 #define LEFT_SLIDER_VIEW_WIDTH ([[UIScreen mainScreen] bounds].size.width) / 1.5
 
-#ifdef DEV
-#define LogEnable YES
-#elif QA
-#define LogEnable NO
-#elif PROD
-#define LogEnable NO
-#endif
-#define DebugLog(__FORMAT__, ...)                                                                                                                                              \
-{                                                                                                                                                                          \
-if (LogEnable)                                                                                                                                                         \
-NSLog((@"🔶%@ FUNCTION%s 🔷LINE-%d " __FORMAT__), [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); \
-}
-
-#pragma mark Define Color
-
-#define UIColorFromRGB(rgbValue)                                         \
-[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 \
-green:((float)((rgbValue & 0x00FF00) >> 8)) / 255.0  \
-blue:((float)((rgbValue & 0x0000FF) >> 0)) / 255.0  \
-alpha:1.0]
-
 //New Theming Constants
 #define HEADER_BAR [UIColor colorWithRed:7.0 / 255.0 green:134.0 / 255.0 blue:231.0 / 255.0 alpha:1.0]
 #define HEADER_BAR_TEXT_COLOR [UIColor whiteColor]

@@ -482,17 +482,14 @@
     NSNumber *numberAmount = [numberFormatter numberFromString:strAmt];
     
     if([numberBalance compare:numberAmount] == NSOrderedSame){
-        DebugLog(@"NSOrderedSame");
         return YES;
     }
     else if([numberBalance compare:numberAmount] == NSOrderedDescending)
     {
-        DebugLog(@"NSOrderedDescending");
         return YES;
     }
     else if([numberBalance compare:numberAmount] == NSOrderedAscending)
     {
-        DebugLog(@"NSOrderedAscending");
         return NO;
     }
     
@@ -531,20 +528,16 @@
 {
     float retVal = 0.0f;
     if(inValue == (id)[NSNull null]){
-        DebugLog(@"null");
         retVal = 0.0f;
     }
     if([inValue isKindOfClass:[NSString class]]){
-        DebugLog(@"NSString");
         
         retVal = [inValue floatValue];
     }
     else if([inValue isKindOfClass:[NSNumber class]]){
-        DebugLog(@"NSNumber");
         retVal = [inValue floatValue];
     }
     
-    DebugLog(@"retVal : %.2f", retVal);
     return retVal;
     
 }
@@ -576,50 +569,36 @@
     [dateFormatter1 setDateFormat:@"Z"];
     [dateFormatter1 setTimeZone:[NSTimeZone systemTimeZone]];
     
-    //  NSString *strDateTime = [dateFormatter1 stringFromDate:currentDate];
-    //  NSArray *arratTimezone = [NSTimeZone knownTimeZoneNames];
-    // DebugLog(@"arratTimezone:%@", arratTimezone);
     
     [dateFormatter1 setDateFormat:@"Z"];
     NSString *strTry = [dateFormatter1 stringFromDate:currentDate];
-    DebugLog(@"strTry : %@",strTry);
     
     [dateFormatter1 setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Singapore"]];
     NSString *strTry1 = [dateFormatter1 stringFromDate:currentDate];
-    DebugLog(@"Asia/Singapore : %@",strTry1);
     
     [dateFormatter1 setTimeZone:[NSTimeZone timeZoneWithName:@"America/New_York"]];
     NSString *strTry2 = [dateFormatter1 stringFromDate:currentDate];
-    DebugLog(@"America/New_York : %@",strTry2);
     
     [dateFormatter1 setTimeZone:[NSTimeZone timeZoneWithName:@"Europe/London"]];
     strTry2 = [dateFormatter1 stringFromDate:currentDate];
-    DebugLog(@"Europe/London : %@",strTry2);
     
     [dateFormatter1 setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Kathmandu"]];
     strTry2 = [dateFormatter1 stringFromDate:currentDate];
-    DebugLog(@"Asia/Kathmandu : %@",strTry2);
     
     [dateFormatter1 setTimeZone:[NSTimeZone timeZoneWithName:@"Pacific/Chatham"]];
     strTry2 = [dateFormatter1 stringFromDate:currentDate];
-    DebugLog(@"Pacific/Chatham : %@",strTry2);
     
     [dateFormatter1 setTimeZone:[NSTimeZone timeZoneWithName:@"Australia/Lord_Howe"]];
     strTry2 = [dateFormatter1 stringFromDate:currentDate];
-    DebugLog(@"Australia/Lord_Howe : %@",strTry2);
     
     NSString *dateDescStr = [currentDate descriptionWithLocale:[NSLocale systemLocale]];
     
-    DebugLog(@"dateDescStr : %@",dateDescStr);
-    DebugLog(@"currentDate : %@",currentDate);
+
     
     NSDate *sourceDate = currentDate;
     NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
     float timeZoneOffset = [destinationTimeZone secondsFromGMTForDate:currentDate] / 3600.0;
     float timeZoneOffset2 = [[NSTimeZone localTimeZone] secondsFromGMT] / 3600.0;
-    DebugLog(@"sourceDate=%@ timeZoneOffset=%f, timezone2=%f", sourceDate, timeZoneOffset,timeZoneOffset2);
-    
-    DebugLog(@"timezone%@:%f", @"Pacific/Chatham", ([[NSTimeZone timeZoneWithName:@"Pacific/Chatham"] secondsFromGMT])/3600.0);
     
     return [[NSTimeZone localTimeZone] secondsFromGMT] / 3600.0;
     
@@ -628,11 +607,8 @@
 +(NSString *)getDeviceDateTimeFROMUTC:(NSString *)inDateTime{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
-    //    NSDate *myDate = [dateFormatter dateFromString:inDateTime];
     [dateFormatter setLocale:[NSLocale systemLocale]];
-    //   NSDate *myDate2 = [dateFormatter dateFromString:inDateTime];
     
-    //   NSString *dateDescStr = [myDate descriptionWithLocale:[NSLocale systemLocale]];
     
     NSString *dateFormat = @"yyyy-mm-dd'T'HH:mm:ssZ";
     
@@ -790,8 +766,6 @@
 
 //getting timezone offset for UTC/GMT in "GMT+-HHMM" format string
 +(NSString *)getDeviceUTCOffsetString{
-    //  NSArray *arratTimezone = [NSTimeZone knownTimeZoneNames];
-    // DebugLog(@"arratTimezone:%@", arratTimezone);
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"Z"];
     [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
@@ -1112,7 +1086,6 @@
     [usrDefault setFloat:amount forKey:@"LQDMBR_BALANCE"];
     [usrDefault synchronize];
     
-    DebugLog(@"LQDMBR_BALANCE : %f",[usrDefault floatForKey:@"LQDMBR_BALANCE"]);
     
     
 }
@@ -1421,7 +1394,6 @@
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&errorJson];
     
     if (errorJson) {
-        DebugLog(@"Error While Converting = %@",[errorJson localizedDescription]);
         return nil;
     }else{
         return json;

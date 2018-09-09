@@ -33,6 +33,8 @@
  * 1.1   : Added convenient method to register custom colors
  * 1.0   : Initial release
  */
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 @interface NSString(Color)
 /** Allows you to register a custom color.<br/>
  Color could be retrieved from `registeredColorForKey`, `colorFromName` or `representedColor` method
