@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "48837E9C209195920040BACB"
-               BuildableName = "ObjC-iOS-TemplateQA.app"
-               BlueprintName = "ObjC-iOS-TemplateQA"
+               BlueprintIdentifier = "48837EB8209195E40040BACB"
+               BuildableName = "ObjC-iOS-TemplatePROD.app"
+               BlueprintName = "ObjC-iOS-TemplatePROD"
                ReferencedContainer = "container:ObjC-iOS-Template.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,16 +26,15 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "48837E9C209195920040BACB"
-            BuildableName = "ObjC-iOS-TemplateQA.app"
-            BlueprintName = "ObjC-iOS-TemplateQA"
+            BlueprintIdentifier = "48837EB8209195E40040BACB"
+            BuildableName = "ObjC-iOS-TemplatePROD.app"
+            BlueprintName = "ObjC-iOS-TemplatePROD"
             ReferencedContainer = "container:ObjC-iOS-Template.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -46,7 +45,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -57,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "48837E9C209195920040BACB"
-            BuildableName = "ObjC-iOS-TemplateQA.app"
-            BlueprintName = "ObjC-iOS-TemplateQA"
+            BlueprintIdentifier = "48837EB8209195E40040BACB"
+            BuildableName = "ObjC-iOS-TemplatePROD.app"
+            BlueprintName = "ObjC-iOS-TemplatePROD"
             ReferencedContainer = "container:ObjC-iOS-Template.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "48837E9C209195920040BACB"
-            BuildableName = "ObjC-iOS-TemplateQA.app"
-            BlueprintName = "ObjC-iOS-TemplateQA"
+            BlueprintIdentifier = "48837EB8209195E40040BACB"
+            BuildableName = "ObjC-iOS-TemplatePROD.app"
+            BlueprintName = "ObjC-iOS-TemplatePROD"
             ReferencedContainer = "container:ObjC-iOS-Template.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
