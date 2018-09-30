@@ -174,11 +174,10 @@
 {
     [Utility deleteKey:PROJECT_SESSIONKEY];
     APIManager* manager = [[APIManager alloc] init];
-
+    
     [manager call:PATH_LOGIN
-          setAction:HTTP_METHOD_POST
-          setData:@{@"userName":textFieldUser.text,@"password":textFieldPassword.text}
-          isToken:NO
+        setAction:HTTP_METHOD_POST
+        setParams:@{@"userName":textFieldUser.text,@"password":textFieldPassword.text}
       setDelegate:self];
 }
 - (IBAction)registerAction:(id)sender
@@ -211,13 +210,14 @@
 #pragma mark -  Call API
 
 #pragma mark -  Web Service
--(void)APIManager:(NSString *)path setAction:(NSString *)action setData:(NSDictionary *)data completed:(NSDictionary *)JSON{
+-(void)APIManager:(NSString *)path setAction:(NSString *)action setParams:(NSDictionary *)params tag:(NSString *)tag completed:(NSDictionary *)JSON{
     if ([path isEqualToString:PATH_LOGIN]){
         [Constants.shared setUserModel:[UserModel fromJSONDictionary:JSON]];
         [Utility registerKey:PROJECT_SESSIONKEY withValue:Constants.shared.userModel.token];
         [Helper authenticationChange];
     }
 }
+
 -(void)APIManager:(NSString *)path setAction:(NSString *)action setData:(NSDictionary *)data failed:(NSError *)error{
     NSLog(@"");
 

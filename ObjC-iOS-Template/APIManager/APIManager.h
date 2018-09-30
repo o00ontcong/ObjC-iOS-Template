@@ -18,12 +18,14 @@
 @required
 - (void)APIManager:(NSString*)path
          setAction:(NSString*)action
-           setData:(NSDictionary*)data
+         setParams:(NSDictionary*)params
+               tag:(NSString*)tag
          completed:(NSDictionary*)JSON;
 @optional
 - (void)APIManager:(NSString*)path
          setAction:(NSString*)action
-           setData:(NSDictionary*)data
+         setParams:(NSDictionary*)params
+               tag:(NSString*)tag
             failed:(NSError*)error;
 
 @end
@@ -38,13 +40,38 @@
 + (BOOL)isInternetAvailable;
 - (void)call:(NSString*)pathString
    setAction:(NSString*)action
-     setData:(NSDictionary*)data
+     setParams:(NSDictionary*)params
      isToken:(BOOL) isToken
+         tag:(NSString*)tag
  setDelegate:(id<APIManagerDelegate>)delegateRef;
 
 - (void)call:(NSString*)pathString
    setAction:(NSString*)action
-     setData:(NSDictionary*)data
+   setParams:(NSDictionary*)params
+         tag:(NSString*)tag
+ setDelegate:(id<APIManagerDelegate>)delegateRef;
+
+- (void)call:(NSString*)pathString
+   setAction:(NSString*)action
+   setParams:(NSDictionary*)params
+ setDelegate:(id<APIManagerDelegate>)delegateRef;
+
+- (void)mock:(NSString*)pathString
+   setAction:(NSString*)action
+   setParams:(NSDictionary*)params
+     isToken:(BOOL) isToken
+         tag:(NSString*)tag
+ setDelegate:(id<APIManagerDelegate>)delegateRef;
+
+- (void)mock:(NSString*)pathString
+   setAction:(NSString*)action
+   setParams:(NSDictionary*)params
+         tag:(NSString*)tag
+ setDelegate:(id<APIManagerDelegate>)delegateRef;
+
+- (void)mock:(NSString*)pathString
+   setAction:(NSString*)action
+   setParams:(NSDictionary*)params
  setDelegate:(id<APIManagerDelegate>)delegateRef;
 
 @end

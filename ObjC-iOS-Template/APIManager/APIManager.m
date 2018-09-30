@@ -49,9 +49,10 @@
 }
 
 - (void)call:(NSString*)pathString
-      setAction:(NSString*)action
-        setData:(NSDictionary*)data
-        isToken:(BOOL)isToken
+   setAction:(NSString*)action
+   setParams:(NSDictionary*)params
+     isToken:(BOOL)isToken
+         tag:(NSString*)tag
     setDelegate:(id<APIManagerDelegate>)delegateRef
 {
     if (isToken){
@@ -80,8 +81,8 @@
             [self.alertInvalid show];
 
         }
-        if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
-            [self.delegate APIManager:pathString setAction:action setData:data failed:error];
+        if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setParams:tag:failed:)]) {
+            [self.delegate APIManager:pathString setAction:action setParams:params tag:tag failed:error];
         }
     } else if ((isToken == YES) && ([sessionToken isEqualToString:@""] || sessionToken == nil)) {
         NSError* error = [[NSError alloc] initWithDomain:URL_HOST
@@ -94,25 +95,20 @@
             [Utility deleteKey:PROJECT_SESSIONKEY];
             [Helper authenticationChange];
         }
-        if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
-            [self.delegate APIManager:pathString setAction:action setData:data failed:error];
+        if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setParams:tag:failed:)]) {
+            [self.delegate APIManager:pathString setAction:action setParams:params tag:tag failed:error];
         }
     } else {
         if ([action isEqualToString:HTTP_METHOD_GET]) {
-            DebugLog(@"%@",urlString);
             [self GET:urlString
-                parameters:data
+                parameters:params
                 progress:nil
                 success:^(NSURLSessionDataTask* _Nonnull task,
                     id _Nullable responseObject) {
                     if (self.isShowResponse){
-                        DebugLog(@"%@",responseObject);
                     }
-                    if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:completed:)]){
-                        [self.delegate APIManager:pathString setAction:action setData:data completed:responseObject];
-;
-                    } else {
-                        DebugLog(@"❌APIManager.delegate is NULL❌");
+                    if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setParams:tag:completed:)]){
+                        [self.delegate APIManager:pathString setAction:action setParams:params tag:tag completed:responseObject];
                     }
                 }
                 failure:^(NSURLSessionDataTask* _Nullable task,
@@ -123,37 +119,30 @@
                         [self.alertInvalid show];
                     }
                     
-                    if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
-                        [self.delegate APIManager:pathString setAction:action setData:data failed:error];
-                    }else {
-                        DebugLog(@"❌APIManager.delegate is NULL❌");
+                    if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setParams:tag:failed:)]) {
+                        [self.delegate APIManager:pathString setAction:action setParams:params tag:tag failed:error];
                     }
+                
                 }];
         } else if ([action isEqualToString:HTTP_METHOD_POST]) {
-            DebugLog(@"%@",urlString);
             
-            [self POST:urlString parameters:data constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+            [self POST:urlString parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                 //do nothing
             } progress:^(NSProgress * _Nonnull uploadProgress) {
                 //do nothing
             } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 if (self.isShowResponse){
-                    DebugLog(@"%@",responseObject);
                 }
-                if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:completed:)]){
-                    [self.delegate APIManager:pathString setAction:action setData:data completed:responseObject];
-                } else {
-                    DebugLog(@"❌APIManager.delegate is NULL❌");
+                if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setParams:tag:completed:)]){
+                    [self.delegate APIManager:pathString setAction:action setParams:params tag:tag completed:responseObject];
                 }
             } failure:^(NSURLSessionDataTask* _Nullable task, NSError*  _Nullable error) {
                 if (!self.isHideAlert){
                     self.alertInvalid = [[UIAlertView alloc] initWithTitle:@"Error" message:[error.userInfo objectForKey:NSLocalizedDescriptionKey] delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok",nil) otherButtonTitles: nil];
                     [self.alertInvalid show];
                 }
-                if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
-                    [self.delegate APIManager:pathString setAction:action setData:data failed:error];
-                }else {
-                    DebugLog(@"❌APIManager.delegate is NULL❌");
+                if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setParams:tag:failed:)]) {
+                    [self.delegate APIManager:pathString setAction:action setParams:params tag:tag failed:error];
                 }
             }];
             
@@ -166,20 +155,53 @@
                 self.alertInvalid = [[UIAlertView alloc] initWithTitle:@"Error" message:[error.userInfo objectForKey:NSLocalizedDescriptionKey] delegate:self cancelButtonTitle:NSLocalizedString(@"btn_ok",nil) otherButtonTitles: nil];
                 [self.alertInvalid show];
             }
-            if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setData:failed:)]) {
-                [self.delegate APIManager:pathString setAction:action setData:data failed:error];
-            }else {
-                DebugLog(@"❌APIManager.delegate is NULL❌");
+            if ([self.delegate respondsToSelector:@selector(APIManager:setAction:setParams:tag:failed:)]) {
+                [self.delegate APIManager:pathString setAction:action setParams:params tag:tag failed:error];
             }
         }
     }
 }
 - (void)call:(NSString*)pathString
       setAction:(NSString*)action
-        setData:(NSDictionary*)data
+   setParams:(NSDictionary*)params
+         tag:(NSString*)tag
     setDelegate:(id<APIManagerDelegate>)delegateRef{
-    [self call:pathString setAction:action setData:data isToken:YES setDelegate:delegateRef];
+    [self call:pathString setAction:action setParams:params isToken: YES tag:tag setDelegate:delegateRef];
+}
+- (void)call:(NSString*)pathString
+   setAction:(NSString*)action
+   setParams:(NSDictionary*)params
+ setDelegate:(id<APIManagerDelegate>)delegateRef{
+    [self call:pathString setAction:action setParams:params isToken: YES tag:@"" setDelegate:delegateRef];
 }
 
+- (void)mock:(NSString*)pathString
+   setAction:(NSString*)action
+   setParams:(NSDictionary*)params
+     isToken:(BOOL) isToken
+         tag:(NSString*)tag
+ setDelegate:(id<APIManagerDelegate>)delegateRef{
+    self.delegate = delegateRef;
+    
+    NSString * str = [pathString componentsSeparatedByString:@"/"].lastObject;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:str ofType:@"json"];
+    NSData *dataParse = [NSData dataWithContentsOfFile:filePath];
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:dataParse options:0 error:nil];
+    [self.delegate APIManager:pathString setAction:action setParams:params tag:tag completed:json];
+}
 
+- (void)mock:(NSString*)pathString
+   setAction:(NSString*)action
+   setParams:(NSDictionary*)params
+         tag:(NSString*)tag
+ setDelegate:(id<APIManagerDelegate>)delegateRef{
+    [self mock:pathString setAction:action setParams:params isToken:YES tag:tag setDelegate:delegateRef];
+}
+- (void)mock:(NSString*)pathString
+   setAction:(NSString*)action
+   setParams:(NSDictionary*)params
+ setDelegate:(id<APIManagerDelegate>)delegateRef{
+    [self mock:pathString setAction:action setParams:params isToken:YES tag:@"" setDelegate:delegateRef];
+
+}
 @end
