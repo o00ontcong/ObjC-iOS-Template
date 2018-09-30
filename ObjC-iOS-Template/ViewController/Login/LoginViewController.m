@@ -172,6 +172,11 @@
 #pragma mark - IBActions
 - (IBAction)loginAction:(id)sender
 {
+    [Utility registerKey:PROJECT_SESSIONKEY withValue:@"aaa"];
+    [Helper authenticationChange];
+}
+- (IBAction)registerAction:(id)sender
+{
     [Utility deleteKey:PROJECT_SESSIONKEY];
     APIManager* manager = [[APIManager alloc] init];
     
@@ -179,9 +184,6 @@
         setAction:HTTP_METHOD_POST
         setParams:@{@"userName":textFieldUser.text,@"password":textFieldPassword.text}
       setDelegate:self];
-}
-- (IBAction)registerAction:(id)sender
-{
 }
 #pragma mark - Public
 
